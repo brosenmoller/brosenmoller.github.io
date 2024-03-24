@@ -7,7 +7,7 @@
             </div>
             <div class="mt-5 text-xl">
                 Contact me at 
-                <a href="mailto:rosenmollerben@gmail.com" target="_blank">
+                <a href="mailto:rosenmollerben@gmail.com" target="_blank" class="text-violet-400">
                     rosenmollerben@gmail.com
                 </a>
             </div>
@@ -22,7 +22,6 @@
 <style>
 a {
   text-decoration: none;
-  color: cadetblue;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
