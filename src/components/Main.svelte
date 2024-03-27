@@ -7,14 +7,14 @@
             </div>
             <div class="mt-5 text-xl">
                 Contact me at 
-                <a href="mailto:rosenmollerben@gmail.com" target="_blank" class="text-violet-400">
+                <a href="mailto:rosenmollerben@gmail.com" target="_blank" class="text-violet-400 fancy-link">
                     rosenmollerben@gmail.com
                 </a>
             </div>
         </div>
     
         <div class="hidden lg:block ml-10">
-            <img class="h-full object-cover rounded-lg" src="/assets/BenRosenmollerPortrait.jpg" alt="">
+            <img class="h-full object-cover rounded-lg" src="assets/BenRosenmollerPortrait.jpg" alt="">
         </div>
     </section>
 </main>
