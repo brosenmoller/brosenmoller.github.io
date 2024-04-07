@@ -1,37 +1,13 @@
-<main class="flex flex-1 flex-col font-normal text-wrap text-5xl p-4">
-    <section id="frontPage" class="flex justify-center p-20">
-        <div>
-            <div class="mb-20">Hi,</div>
-            <div>
-                I'm <strong>Ben Rosenmöller</strong>, a passionate Game Developer from The Netherlands, who loves to create, design and learn new things.
-            </div>
-            <div class="mt-5 text-xl">
-                Contact me at 
-                <a href="mailto:rosenmollerben@gmail.com" target="_blank" class="text-violet-400 fancy-link">
-                    rosenmollerben@gmail.com
-                </a>
-            </div>
-        </div>
-    
-        <div class="hidden lg:block ml-10">
-            <img class="h-full object-cover rounded-lg" src="assets/BenRosenmollerPortrait.jpg" alt="">
-        </div>
-    </section>
+<script>
+    import Intro from "./Intro.svelte";
+    import About from "./About.svelte";
+    import Skills from "./Skills.svelte";
+    import Projects from "./Projects.svelte";
+</script>
+
+<main class="flex flex-1 flex-col font-normal text-wrap p-4">
+    <Intro />
+    <About />
+    <Skills />
+    <Projects />
 </main>
-
-<style>
-a {
-  text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-  background-size: 100% 2px;
-}
-</style>

@@ -2,8 +2,10 @@
     export let y;
 
     let tabs = [
-        { name: 'Projects', link: '#projects' },
+        { name: 'Intro', link: '#intro' },
         { name: 'About', link: '#about' },
+        { name: 'Skills', link: '#skills' },
+        { name: 'Projects', link: '#projects' },
     ]
 </script>
 
@@ -13,8 +15,8 @@
         <b class="font-bold">Ben</b> Rosenmöller
     </h1>
     <div class="sm:flex items-center gap-4 hidden">
-        {#each tabs as tab, index}
-            <a href="/" class="duration-200 hover:text-violet-400">
+        {#each tabs as tab}
+            <a href="{tab.link}" class="duration-200 hover:text-violet-400">
                 <p>{tab.name}</p>
             </a>
         {/each}
