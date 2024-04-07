@@ -23,6 +23,7 @@ html {
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+  
 }
 
 .fancy-link:hover,

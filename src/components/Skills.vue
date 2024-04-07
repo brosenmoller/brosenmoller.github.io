@@ -41,12 +41,14 @@
             ]
         },
         {
-            title: "Game Engines",
+            title: "Engines / Frameworks",
             children: [
                 "Unity",
                 "Godot",
                 "Bevy",
                 "SFML",
+                "Vue.js",
+                "Laravel"
             ]
         },
         {
@@ -56,6 +58,7 @@
                 "Miro",
                 "Blender",
                 "Krita",
+                "Davinci Resolve"
             ]
         },
         {
@@ -69,5 +72,3 @@
         },
     ]);
 </script>
-
-
