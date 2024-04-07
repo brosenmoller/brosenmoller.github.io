@@ -7,6 +7,6 @@
     </div>
 
     <div class="lg:w-4/5 pl-5">
-
+        project 1
     </div>
 </section>
