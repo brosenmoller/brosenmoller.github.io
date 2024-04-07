@@ -1,4 +1,5 @@
-<section id="about" class="lg:flex justify-center lg:p-20 text-lg min-h-screen pt-8">
+<template>
+    <section id="about" class="section-main">
 
     <div class="lg:w-1/5 pr-5">
         <h1 class="flex lg:justify-end justify-start font-extrabold text-2xl uppercase text-violet-400">
@@ -18,4 +19,5 @@
         </p>
     </div>
 
-</section>
+    </section>
+</template>
