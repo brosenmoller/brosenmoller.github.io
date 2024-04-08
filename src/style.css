@@ -4,7 +4,7 @@
 
 @layer components {
   .section-main {
-    @apply lg:flex justify-center lg:p-20 text-lg min-h-screen pt-20;
+    @apply lg:flex justify-center lg:p-20 md:p-10 lg:text-lg text-base min-h-screen pt-20;
   }
 }
 

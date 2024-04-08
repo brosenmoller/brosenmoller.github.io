@@ -1,5 +1,5 @@
 <template>
-    <section id="intro" class="section-main">
+    <section id="intro" class="section-main md:pt-20 pt-2">
         <div class="lg:text-5xl text-2xl">
             <div class="lg:mb-20 mb-10">Hi,</div>
             <div>

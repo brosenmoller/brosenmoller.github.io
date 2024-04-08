@@ -7,8 +7,8 @@
             </h1>
         </div>
 
-        <div class="lg:w-4/5 pl-5 flex flex-wrap lg:flex-nowrap lg:justify-start">
-            <div v-for="skill in skills" class="mr-8 lg:mt-0 mt-4">
+        <div class="lg:w-4/5 pl-5 lg:mt-0 mt-4 flex flex-wrap lg:flex-nowrap lg:justify-start">
+            <div v-for="skill in skills" class="mr-8 mb-4">
                 <span class="font-bold">{{skill.title}}</span>
                 <ul>
                     <li v-for="child in skill.children" class="font-normal">

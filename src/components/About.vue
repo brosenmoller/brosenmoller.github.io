@@ -7,7 +7,7 @@
         </h1>
     </div>
 
-    <div class="lg:w-4/5 pl-5">
+    <div class="lg:w-4/5 pl-5 lg:mt-0 mt-4">
         <p class="">
             I'm a 21-year-old student a <strong>HKU in Utrecht</strong> where I study <strong>Game Development</strong>. 
             I have always loved being creative and learning new things. 
