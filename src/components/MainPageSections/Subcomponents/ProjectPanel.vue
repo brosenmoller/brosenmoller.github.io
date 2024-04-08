@@ -6,8 +6,8 @@
             <img :src="getImageUrl()" class="sm:w-2/5 object-contain rounded">
             <div class="sm:w-3/5 pr-5 flex flex-col justify-between">
               <p class="overflow-hidden" v-html="description"></p>
-              <div>
-                <a :href="link" class="fancy-link text-violet-400" target="_blank">To Page</a>
+              <div class="pt-2">
+                <RouterLink :to="link" class="fancy-link text-violet-400">To Page</RouterLink>
               </div>
             </div>
             
@@ -16,6 +16,8 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router';
+
 const props = defineProps({
   title: String,
   img: String,

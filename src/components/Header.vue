@@ -3,12 +3,13 @@
      border border-solid py-6 bg-slate-900 border-transparent"
      @mouseleave="HideAllMenus()">
         
-        <h1 class="font-medium ">
+        <a href="/" class="font-medium ">
             <b class="font-bold">Ben</b> Rosenmöller
-        </h1>
+        </a>
         
+
         <div class="sm:flex items-center gap-4 hidden">
-            <a v-for="tab in tabs" @mouseenter="HideAllMenus()" :href="tab.link" class="duration-200 hover:text-violet-400 flex justify-between">
+            <a v-for="tab in tabs" @mouseenter="HideAllMenus()" :href="'/' + tab.link" class="duration-200 hover:text-violet-400 flex justify-between">
                 <p>{{tab.name}}</p>
             </a>
 
@@ -30,7 +31,7 @@
                     
                     <div class="py-1" role="none">
 
-                        <a :href="tab.link" class="text-white block px-4 py-2 text-sm hover:bg-slate-600 focus:bg-slate-500 font-bold" >
+                        <a :href="'/' + tab.link" class="text-white block px-4 py-2 text-sm hover:bg-slate-600 focus:bg-slate-500 font-bold" >
                             All {{ tab.name }}
                         </a>
 
@@ -38,10 +39,10 @@
 
                         <a 
                             v-for="child in tab.children"
-                            href="#"
+                            :href="child.link"
                             class="text-white block px-4 py-2 text-sm hover:bg-slate-600 focus:bg-slate-500" 
                         >
-                            {{ child }}
+                            {{ child.name }}
                         </a>
 
                     </div>
@@ -50,6 +51,8 @@
             </div>
         </div>
 
+
+
     </header>
 </template>
 
@@ -57,8 +60,6 @@
     import { ref } from 'vue';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
     import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
-
-    const hasEntered = ref(false);
 
     const tabs = ref([
         { 
@@ -85,11 +86,26 @@
             name: 'Projects', 
             link: '#projects',
             children: [
-                'Voxel Smith',
-                'Enigma Escape',
-                'Terrain Generation',
-                'Paint Over War',
-                'Under Our Wing'
+                {
+                    name: 'Voxel Smith',
+                    link: "/voxel-smith"
+                },
+                {
+                    name: 'Enigma Escape',
+                    link: "/voxel-smith"
+                },
+                {
+                    name: 'Terrain Generation',
+                    link: "/voxel-smith"
+                },
+                {
+                    name: 'Paint Over War',
+                    link: "/voxel-smith"
+                },
+                {
+                    name: 'Under Our Wing',
+                    link: "/voxel-smith"
+                },
             ]
         },
         {
@@ -97,7 +113,14 @@
             name: 'Hobbies', 
             link: '#hobbies',
             children: [
-                'Nevas Buildings'
+                {
+                    name: 'Nevas Buildings',
+                    link: "/voxel-smith"
+                },
+                {
+                    name: 'Music',
+                    link: "/voxel-smith"
+                },
             ]
         },
     ]);

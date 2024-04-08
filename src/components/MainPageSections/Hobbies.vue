@@ -30,6 +30,12 @@ const projects = ref([
         link: "https://www.youtube.com/@NevasBuildings",
         description: "Nevas Buildings is a Youtube channel I started with a friend of mine. We come together to build historically inspired buildings and I edit them to post to the channel."
     },
+    {
+        title: "Music",
+        img: "PianoCover.jpg",
+        link: "#",
+        description: "I love music, listening, playing and composing. I play the piano, trumpet and I used to play the flute as well. It is something that can always calm me doen in stressfull times."
+    },
 ]);
 
 </script>
