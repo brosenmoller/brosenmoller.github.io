@@ -6,7 +6,7 @@
                 rosenmollerben@gmail.com
             </a>
         </div>
-        <div class="flex md:justify-end justify-center space-x-5">
+        <div class="flex md:justify-end justify-center space-x-5 md:text-xl text-base">
             <a href="https://github.com/brosenmoller" target="_blank">
                 <FontAwesomeIcon :icon="faGithub" />
             </a>

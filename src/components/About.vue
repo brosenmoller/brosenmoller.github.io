@@ -10,14 +10,17 @@
     <div class="lg:w-4/5 pl-5 lg:mt-0 mt-4">
         <p class="">
             I'm a 21-year-old student a <strong>HKU in Utrecht</strong> where I study <strong>Game Development</strong>. 
-            I have always loved being creative and learning new things. 
+            I have always loved being creative and learning new things and technical work.
             Game development has allowed me to combine these things. 
             Now I'm dedicated to turn that passion into a career.
         </p>
 
         <p class="mt-5">
             At HKU, I have had the opportunity to delve into many different aspects of Game Development and meet like-minded people. 
-            I really enjoy learning through creating a project, which I could do a lot of here.
+            I focused mostly on gameplay and tool development, but I have been able to acquire a broad skill set. 
+            I am a quick learner, so can familiarize myself with new things quite fast. 
+            This is especially the case when working on a project. 
+            So I am really happy that HKU is structured to learn from projects.
         </p>
 
         <p class="mt-5">
@@ -31,9 +34,7 @@
         </p>
 
         <p class="mt-5">
-            Listed below, you'll find a collection of projects I did over the past years. 
-            Thank you for taking the time to explore my portfolio. 
-            I hope you enjoy browsing through my work!
+            Listed below, you'll find a collection of skills and projects I did or acquired over the past years. Thank you for taking the time to explore my portfolio. I hope you enjoy browsing through my work!
         </p>
     </div>
 

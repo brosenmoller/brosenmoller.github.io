@@ -32,6 +32,7 @@
                 "C++",
                 "Rust",
                 "Java",
+                "HLSL",
                 "Python",
                 "GDScript",
                 "HTML",

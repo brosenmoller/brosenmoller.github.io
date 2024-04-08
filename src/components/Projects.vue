@@ -20,20 +20,35 @@ import ProjectPanel from "./ProjectPanel.vue";
 
 const projects = ref([
     {
-        title: "Project 1",
-        img: "BenRosenmollerPortrait.jpg",
-        description: "f"
+        title: "Voxelsmith",
+        img: "VoxelSmithCover.jpg",
+        description: "Voxelsmith is a voxel based level editor which allows you to add paint voxels, use nested prefabs, import from minecraft, export to OBJ and export to UnityPrefabs. It was build in C# using the Godot Game Engine"
     },
     {
-        title: "Project 2",
-        img: "BenRosenmollerPortrait.jpg",
-        description: "asdfasdf;la s;djf;la sjdl;kfj al;ksjdfl; kajsl;kdf las sjdlf j al;skdj f;lajsd l;k fjl;aks dlfj asl;dfj l;asjd j;lfja;l skd jfl;kas kdjf;lasj d;l kfkj al;ksjd fl;kaj sl;kdjfl asldj fl;ajsl; djf;lkajs dl;kfj;a"
+        title: "Enigma Escape",
+        img: "EnigmaEscape.jpg",
+        description: "Enigma Escape is a 2D puzzle platformer where the puzzle comes from physically assembling your controller. This project was created using C++ with Arduino and C# with Unity."
     },
     {
-        title: "Project 3",
-        img: "BenRosenmollerPortrait.jpg",
-        description: "f"
+        title: "Terrain Generation",
+        img: "ECTTPCover.jpg",
+        description: "In this project I Created an infinite terrain generator using Unity, C# and HLSL compute shaders."
     },
+    {
+        title: "Paint over War",
+        img: "PaintOverWarCover.jpg",
+        description: "Paint over a war is a story driven 3D puzzle game in which you play as a time traveling soldier dicovering an old military base. It was created after our school trip to Berlin and was based of the 'Teufelsberg'. The project was created in Unity using C#."
+    },
+    {
+        title: "Under Our Wing",
+        img: "UnderOurWingCover.jpg",
+        description: "This project was commissioned by the municipality of Utrecht. In this game you play as a pigeon who is going around gathering stories from local refugees. When you publish the stories you might see the city change."
+    },
+    // {
+    //     title: "Rootscape",
+    //     img: "RootscapeCover.jpg",
+    //     description: "Place Holder text"
+    // },
 ]);
 
 </script>
