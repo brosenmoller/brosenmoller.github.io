@@ -4,7 +4,8 @@
         <About />
         <Timeline />
         <Skills />
-        <Projects/>
+        <Projects />
+        <Hobbies />
     </main>
 </template>
 
@@ -14,4 +15,5 @@
     import Timeline from "../components/MainPageSections/Timeline.vue";
     import Skills from "../components/MainPageSections/Skills.vue";
     import Projects from "../components/MainPageSections/Projects.vue";
+    import Hobbies from "../components/MainPageSections/Hobbies.vue";
 </script>
