@@ -5,9 +5,9 @@
 
             <img :src="getImageUrl()" class="sm:w-2/5 object-contain rounded">
             <div class="sm:w-3/5 pr-5 flex flex-col justify-between">
-              <p class="overflow-hidden">{{ description }}</p>
+              <p class="overflow-hidden" v-html="description"></p>
               <div>
-                <a href="" class="fancy-link text-violet-400 ">To Project Page</a>
+                <a :href="link" class="fancy-link text-violet-400" target="_blank">To Project Page</a>
               </div>
             </div>
             
@@ -19,11 +19,12 @@
 const props = defineProps({
   title: String,
   img: String,
+  link: String,
   description: String
 });
 
 function getImageUrl() {
-  return new URL(`../assets/${props.img}`, import.meta.url);
+  return new URL(`../../../assets/${props.img}`, import.meta.url);
 }
 
 </script>

@@ -2,14 +2,16 @@
     <main class="flex flex-1 flex-col font-normal text-wrap p-4">
         <Intro />
         <About />
+        <Timeline />
         <Skills />
         <Projects/>
     </main>
 </template>
 
 <script setup>
-    import Intro from "../components/Intro.vue";
-    import About from "../components/About.vue";
-    import Skills from "../components/Skills.vue";
-    import Projects from "../components/Projects.vue";
+    import Intro from "../components/MainPageSections/Intro.vue";
+    import About from "../components/MainPageSections/About.vue";
+    import Timeline from "../components/MainPageSections/Timeline.vue";
+    import Skills from "../components/MainPageSections/Skills.vue";
+    import Projects from "../components/MainPageSections/Projects.vue";
 </script>

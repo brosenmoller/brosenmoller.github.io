@@ -14,7 +14,7 @@
         </div>
 
         <div class="lg:ml-10 mb-20 lg:p-0 md:p-20 p-5">
-            <img class="h-full object-cover rounded-lg" src="../assets/BenRosenmollerPortrait.jpg" alt="">
+            <img class="h-full object-cover rounded-lg" src="../../assets/BenRosenmollerPortrait.jpg" alt="">
         </div>
     </section>
 </template>
