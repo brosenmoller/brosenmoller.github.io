@@ -40,12 +40,12 @@ const timelineElements = ref([
     {
         time: "2021 - 2023",
         title: "👨‍💻 Jilster - Web Developer",
-        description: "After working at Jilster for two years, they noticed that I was interested in programming and asked me to join their development team. Here I created a full stack application for the service supporters to look up information about the users and incoming orders. During this time I learned more about collaboration in a development team and using Git and Scrum."
+        description: "After working at Jilster for two years, they noticed that I was interested in programming and asked me to join their development team. Here I created a full stack application for the service supporters to look up information about the users and incoming orders. During this time, I learned more about collaboration in a development team and using Git and Scrum."
     },
     {
         time: "December 2021",
         title: "👨‍💻 Humotion - Development Intern",
-        description: "In my gap year I managed to get an internship position at the german company Humotion. Their I worked with international collegues to create a web tool, they could use to create map data for their mobile app. I found it really intressting to see how they operated."
+        description: "In my gap year after high school, I managed to get an internship position at the German company Humotion. There I worked with international colleagues to create a web tool, they could use to create map data for their mobile app. I found it fascinating to see how they operated."
     },
     {
         time: "2022 - Present",
