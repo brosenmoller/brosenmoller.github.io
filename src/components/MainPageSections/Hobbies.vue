@@ -34,7 +34,7 @@ const projects = ref([
         title: "Music",
         img: "PianoCover.jpg",
         link: "#",
-        description: "I love music, listening, playing and composing. I play the piano, trumpet and I used to play the flute as well. It is something that can always calm me doen in stressfull times."
+        description: "I love music, listening, playing and composing. I play the piano, trumpet and I used to play the flute as well. It is something that can always calm me down in stressfull times."
     },
 ]);
 

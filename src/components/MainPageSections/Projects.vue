@@ -40,19 +40,19 @@ const projects = ref([
         title: "Terrain Generation",
         img: "ECTTPCover.jpg",
         link: "",
-        description: "In this project I Created an infinite terrain generator using Unity, C# and HLSL compute shaders."
+        description: "In this project I created an infinite terrain generator using Unity, C# and HLSL compute shaders."
     },
     {
         title: "Paint over War",
         img: "PaintOverWarCover.jpg",
         link: "",
-        description: "Paint over a war is a story driven 3D puzzle game in which you play as a time traveling soldier dicovering an old military base. It was created after our school trip to Berlin and was based of the 'Teufelsberg'. The project was created in Unity using C#."
+        description: "Paint over a war is a story driven 3D puzzle game in which you play as a time traveling soldier dicovering an old military base. It was created after our school trip to Berlin and was based of the 'Teufelsberg'. I lead a team of 6 members to create this project. It was created in Unity using C#."
     },
     {
         title: "Under Our Wing",
         img: "UnderOurWingCover.jpg",
         link: "https://nebaj.itch.io/under-our-wing",
-        description: "This project was commissioned by the municipality of Utrecht. In this game you play as a pigeon who is going around gathering stories from local refugees. When you publish the stories you might see the city change."
+        description: "This project was commissioned by the municipality of Utrecht. In this game you play as a pigeon who is going around gathering stories from local refugees. This project was created in a cross school team of 8 members using Unity and C#"
     },
     // {
     //     title: "Rootscape",
