@@ -9,7 +9,7 @@
         
 
         <div class="sm:flex items-center gap-4 hidden">
-            <a v-for="tab in tabs" @mouseenter="HideAllMenus()" :href="'/' + tab.link" class="duration-200 hover:text-violet-400 flex justify-between">
+            <a v-for="tab in tabs" @mouseenter="HideAllMenus()" :href="tab.link" class="duration-200 hover:text-violet-400 flex justify-between">
                 <p>{{tab.name}}</p>
             </a>
 
@@ -31,7 +31,7 @@
                     
                     <div class="py-1" role="none">
 
-                        <a :href="'/' + tab.link" class="text-white block px-4 py-2 text-sm hover:bg-slate-600 focus:bg-slate-500 font-bold" >
+                        <a :href="tab.link" class="text-white block px-4 py-2 text-sm hover:bg-slate-600 focus:bg-slate-500 font-bold" >
                             All {{ tab.name }}
                         </a>
 
@@ -64,19 +64,19 @@
     const tabs = ref([
         { 
             name: 'Intro', 
-            link: '#intro' 
+            link: '/#intro' 
         },
         { 
             name: 'About', 
-            link: '#about' 
+            link: '/#about' 
         },
         { 
             name: 'Timeline', 
-            link: '#timeline' 
+            link: '/#timeline' 
         },
         { 
             name: 'Skills', 
-            link: '#skills' 
+            link: '/#skills' 
         },
     ]);
 
@@ -84,7 +84,7 @@
         {
             active: false,
             name: 'Projects', 
-            link: '#projects',
+            link: '/#projects',
             children: [
                 {
                     name: 'Voxel Smith',
@@ -92,26 +92,26 @@
                 },
                 {
                     name: 'Enigma Escape',
-                    link: "/voxel-smith"
+                    link: "/enigma-escape"
                 },
                 {
                     name: 'Terrain Generation',
-                    link: "/voxel-smith"
+                    link: "/terrain-generation"
                 },
                 {
                     name: 'Paint Over War',
-                    link: "/voxel-smith"
+                    link: "/paint-over-war"
                 },
                 {
                     name: 'Under Our Wing',
-                    link: "/voxel-smith"
+                    link: "/under-our-wing"
                 },
             ]
         },
         {
             active: false,
             name: 'Hobbies', 
-            link: '#hobbies',
+            link: '/#hobbies',
             children: [
                 {
                     name: 'Nevas Buildings',
