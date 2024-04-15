@@ -19,19 +19,23 @@
     import HeaderLinksMobile from './HeaderLinksMobile.vue';
 
     const tabs = ref([
-        { 
+        {
             name: 'Intro', 
             link: '/#intro' 
         },
-        { 
+        {
             name: 'About', 
             link: '/#about' 
         },
-        { 
+        {
             name: 'Timeline', 
             link: '/#timeline' 
         },
-        { 
+        {
+            name: 'Refrences', 
+            link: '/#refrences' 
+        },
+        {
             name: 'Skills', 
             link: '/#skills' 
         },
