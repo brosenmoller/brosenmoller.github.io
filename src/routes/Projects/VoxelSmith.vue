@@ -9,7 +9,7 @@
         
         <section class="xl:flex xl:justify-between gap-8">
             
-            <div class="text-lg text-justify xl:w-2/4 mb-8 xl:mb-0 xl:px-0 px-5">
+            <div class="text-lg xl:w-2/4 mb-8 xl:mb-0 xl:px-0 px-5">
                 <p class="">
                     Voxel Smith is a 3D level editor based on voxels. The editor includes a subwindow in which you can control a character that allows you to walk/fly through the world. You can place and break voxels from your palette. You can also use the cube and line tool two drag between two points and fill or break the selection. This palette is fully customizable and also supports linking Unity Prefabs. 
                 </p>
@@ -18,7 +18,6 @@
                     Furthermore, you can import a project from Minecraft via the ".schematic" file format. When finished, you can export both as a 3D model (OBJ) and also directly to a Unity Prefab. The Unity Prefab export will then ensure that all your loaded prefabs are also exported with it.
                 </p>
             </div>
-            
 
             <img class="xl:w-2/4 xl:pr-10 xl:px-0 px-5 object-contain object-top" src="../../assets/VoxelSmith/VoxelSmith8.jpg" alt="">
         </section>
@@ -26,18 +25,29 @@
         <h2 class="font-bold text-2xl">Process</h2>
 
         <section class="xl:flex xl:justify-between gap-8">
-            <div class="text-lg text-justify xl:w-2/4 mb-8 xl:mb-0 xl:px-0 px-5">
+            <div class="text-lg xl:w-2/5 mb-8 xl:mb-0 xl:px-0 px-5">
                 <p class="">
-                    Voxel Smith is a 3D level editor based on voxels. The editor includes a subwindow in which you can control a character that allows you to walk/fly through the world. You can place and break voxels from your palette. You can also use the cube and line tool two drag between two points and fill or break the selection. This palette is fully customizable and also supports linking Unity Prefabs. 
-                </p>
-
-                <p class="mt-5">
-                    Furthermore, you can import a project from Minecraft via the ".schematic" file format. When finished, you can export both as a 3D model (OBJ) and also directly to a Unity Prefab. The Unity Prefab export will then ensure that all your loaded prefabs are also exported with it.
+                    Initially, I started this project in Native Rust, this was because I like working in Rust and because it offers a lot of speed and stability by itself. In addition, for Rust I was able to find the package fastNBT2 that allowed me to easily import Minecraft Schematic files. From here, I first wanted to translate it to a 3D model. For this, I chose WaveFront OBJ files because it is an easy-to-read and write file format supported in almost every game engine. In the images, you can see the steps I took to get this to work 
                 </p>
             </div>
             
+            <div class="xl:w-3/5 xl:pr-10 xl:px-0 px-5 object-contain flex justify-start flex-col gap-4">
+                <img src="../../assets/VoxelSmith/VoxelSmith2.jpg" alt="">
+                <img src="../../assets/VoxelSmith/VoxelSmith3.jpg" alt="">
+            </div>
+        </section>
 
-            <img class="xl:w-2/4 xl:pr-10 xl:px-0 px-5 object-contain object-top" src="../../assets/VoxelSmith/VoxelSmith8.jpg" alt="">
+        <section class="xl:flex xl:justify-between gap-8">    
+            <div class="xl:w-3/5 xl:pr-10 xl:px-0 px-5 object-contain flex justify-start flex-col gap-4">
+                <img src="../../assets/VoxelSmith/VoxelSmith2.jpg" alt="">
+                <img src="../../assets/VoxelSmith/VoxelSmith3.jpg" alt="">
+            </div>
+
+            <div class="text-lg xl:w-2/5 mb-8 xl:mb-0 xl:px-0 px-5">
+                <p class="">
+                    Initially, I started this project in Native Rust, this was because I like working in Rust and because it offers a lot of speed and stability by itself. In addition, for Rust I was able to find the package fastNBT2 that allowed me to easily import Minecraft Schematic files. From here, I first wanted to translate it to a 3D model. For this, I chose WaveFront OBJ files because it is an easy-to-read and write file format supported in almost every game engine. In the images, you can see the steps I took to get this to work 
+                </p>
+            </div>
         </section>
 
     </div>
