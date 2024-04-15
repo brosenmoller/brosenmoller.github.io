@@ -1,23 +1,27 @@
 <template>
     <ProjectPage 
         :title="'Enigma Escape'"
-        :description="'Enigma Escape is a 2D puzzle platformer where the puzzle comes from physically assembling your controller. This project was created using C++ with Arduino and C# with Unity.'"
+        :description="''"
         :subtitle="'Team of 5'"
     >
-        <div class="flex justify-between h-80">
+        <div class="flex justify-between md:flex-row flex-col gap-8 p-5">
 
-            <p class="text-lg md:w-1/2 md:h-1/2">
-                laksjdfljas df;lajsljfl;kajsd;l jflasjdl fjal;sk dj;flja sldjf l;aj sdljf ;lasjdl;fj l;ajsdlkfjlk;asdj ;flajsl;djf l;kasj d;lfjal;s d jfl;asj dl;kfj a;lskjd l;fja l;sddj fl;ajsl;d jfl;asjd ;ljf;l asjdl;fj alsdj f;ljkasdf
+            <p class="text-lg md:w-1/2">
+                Enigma Escape is a 2D puzzle platformer where the puzzle comes from physically assembling your controller. This project was created using C++ with Arduino and C# with Unity.
             </p>
 
-            <LiteYouTubeEmbed
-                id="NIxikwfLS8Y"
-                title="Enigma Escape Trailer Video"
-            />
+            <div class="md:w-1/2">
+                <LiteYouTubeEmbed
+                    id="NIxikwfLS8Y"
+                    title="Enigma Escape Trailer Video"
+                />
+            </div>
         </div>
         
+        
+        <div class="mb-20"></div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-2">
             <div class="grid gap-4">
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="../../assets/EnigmaEscape/EnigmaEscapeProcess1.jpg" alt="">
@@ -72,9 +76,3 @@ import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
 import 'vue-lite-youtube-embed/style.css'
 
 </script>
-
-<style scoped>
-.youtube-iframe {
-    @apply md:w-56 md:h-56
-}
-</style>
