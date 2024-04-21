@@ -24,19 +24,42 @@
 
         <h2 class="font-bold text-3xl">Process</h2>
 
-        <h2 class="text-2xl">Rust, Obj and NBT</h2>
+        <h2 class="text-2xl">Begin</h2>
 
-        <section class="flex justify-between xl:flex-row flex-col-reverse lg:gap-8 gap-4 mb-5">
-            <div class="lg:text-lg text-base xl:w-2/5 mb-8 xl:mb-0 xl:px-0 px-5">
-                <p class="">
-                    Initially, I started this project in Native Rust, this was because I like working in Rust and because it offers a lot of speed and stability by itself. In addition, for Rust I was able to find the package fastNBT2 that allowed me to easily import Minecraft Schematic files. From here, I first wanted to translate it to a 3D model. For this, I chose WaveFront OBJ files because it is an easy-to-read and write file format supported in almost every game engine. In these images, you can see the steps I took to get this to work. 
-                </p>
-            </div>
-            
-            <div class="xl:w-3/5 xl:pr-10 xl:px-0 px-5 object-contain flex justify-start flex-col gap-4">
-                <img src="../../assets/VoxelSmith/VoxelSmith2.jpg" alt="">
-                <img src="../../assets/VoxelSmith/VoxelSmith3.jpg" alt="">
-            </div>
+        <section class="flex justify-between xl:flex-row flex-col lg:gap-8 gap-4 mb-5">
+           <div class="xl:w-1/3">
+                <div class="lg:text-lg text-base mb-4 xl:px-0 px-5">
+                    <p class="">
+                        I started with some simple Perlin noise on a generated plane.
+                    </p>
+                </div>
+                
+                <div class="xl:px-0 px-5 object-contain flex justify-start flex-col gap-4">
+                    <img src="../../assets/TerrainGeneration/ECTTP1.gif" alt="">
+                </div>
+           </div>
+           <div class="xl:w-1/3">
+                <div class="lg:text-lg text-base mb-4 xl:px-0 px-5">
+                    <p class="">
+                        Then I added octaves of noise on top of that to generate some mountains.
+                    </p>
+                </div>
+                
+                <div class="xl:px-0 px-5 object-contain flex justify-start flex-col gap-4">
+                    <img src="../../assets/TerrainGeneration/ECTTP2.jpg" alt="">
+                </div>
+           </div>
+           <div class="xl:w-1/3">
+                <div class="lg:text-lg text-base mb-4 xl:px-0 px-5">
+                    <p class="">
+                        Finally, I turned the generation into an infinite world.
+                    </p>
+                </div>
+                
+                <div class="xl:px-0 px-5 object-contain flex justify-start flex-col gap-4">
+                    <img src="../../assets/TerrainGeneration/ECTTP3.jpg" alt="">
+                </div>
+           </div>
         </section>
 
         <h2 class="text-2xl">Godot & Unity Prefabs</h2>
@@ -60,14 +83,32 @@
         <h2 class="text-2xl">Learning Sources</h2>
         
         <section class="ml-10">
-            <ul class="text-white dashed">
-                <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
-                <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
-                <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
-                <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
-                <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
-                <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
-                <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
+            <ul class="dashed text-white">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400" target="_blank">
+                        MeshGeneration by Brackeys
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=64NblGkAabk" class="fancy-link text-violet-400" target="_blank">
+                        Procedural Terrain by Brackeys
+                    </a>
+                </li>
+                <li>
+                    <a href="https://paulbourke.net/geometry/polygonise/" class="fancy-link text-violet-400" target="_blank">
+                        RMarching cubes Table
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3" class="fancy-link text-violet-400" target="_blank">
+                        Procedural Generation by Sebastian Lague
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=v7yyZZjF1z4&list=PLFt_AvWsXl0eZgMK_DT5_biRkWXftAOf9" class="fancy-link text-violet-400" target="_blank">
+                        Procedural Cave generation by Sebastian Lague
+                    </a>
+                </li>
             </ul>
         </section>
 
@@ -81,19 +122,3 @@
 import ProjectPage from '../../components/ProjectPage.vue';
 
 </script>
-
-<style scoped>
-
-ul.dashed {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1em;
-}
-ul.dashed > li:before {
-    display: inline-block;
-    content: "-";
-    width: 1em;
-    margin-left: -1em;
-}
-
-</style>

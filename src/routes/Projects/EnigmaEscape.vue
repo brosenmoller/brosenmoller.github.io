@@ -12,7 +12,7 @@
                         Enigma Escape is a game I developed with a team of 5 for Project Hybrid of the second year Games and Interaction at HKU. In this, we had to bring the digital and physical worlds together. 
                     </p>
                     <p class="mt-5">
-                        We did this by developing a game in which you play a digital 2D platformer controlled by a physical puzzle. The physical puzzle consists of a grid and different shaped blocks. These blocks can be placed in the grid like a jigsaw puzzle from when they act as buttons to control the game. Each block is associated with one particular action. The puzzle consists of recognizing which actions are needed in a level and then placing those blocks together on the grid. This project was created using C++ with Arduino and C# with Unity.
+                        We did this by developing a game in which you play a digital 2D platformer controlled by a physical puzzle. The physical puzzle consists of a grid and different shaped blocks. These blocks can be placed in the grid like a jigsaw puzzle, from then on they act as buttons to control the game. Each block is associated with one particular action. The puzzle consists of recognizing which actions are needed in a level and then placing those blocks together on the grid. This project was created using C++ with Arduino and C# with Unity.
                     </p>
                     <p class="mt-5">
                         Here you can see a trailer we created for this project posted to the YouTube channel of one of the group members.
@@ -72,7 +72,7 @@
 
             <section class="flex justify-between xl:flex-row flex-col lg:gap-8 gap-4">    
                 <div class="xl:w-1/2 xl:pr-10 xl:px-0 px-5 object-contain flex justify-start flex-row gap-4">
-                    <img class="object-contain object-top w-1/2" src="../../assets/EnigmaEscape/EnigmaEscapeProcess15.jpg" alt="">
+                    <img class="object-contain object-top w-1/2" src="../../assets/EnigmaEscape/EnigmaEscapeProcess18.jpg" alt="">
                     <img class="object-contain object-top w-1/2" src="../../assets/EnigmaEscape/EnigmaEscapeProcess16.jpg" alt="">
                 </div>
 
@@ -90,12 +90,12 @@
             <h2 class="text-2xl">Build Process</h2>
 
             <section>
-                <div class="grid grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 grid-cols-1 grid-rows-1 gap-4">
+                <!-- <div class="xl:px-0 px-5 grid grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 grid-cols-1 grid-rows-1 gap-4 mb-4">
                     <img class="h-auto max-w-full rounded-lg" src="../../assets/EnigmaEscape/EnigmaEscapeProcess2.jpg" alt="">
                     <img class="h-auto max-w-full rounded-lg" src="../../assets/EnigmaEscape/EnigmaEscapeProcess3.jpg" alt="">
                     <img class="h-auto max-w-full rounded-lg" src="../../assets/EnigmaEscape/EnigmaEscapeProcess4.jpg" alt="">
-                </div>
-                <div class="grid grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-3 sm:grid-cols-2 sm:grid-rows-2 grid-cols-1 grid-rows-1 gap-4">
+                </div> -->
+                <div class="xl:px-0 px-5 grid grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-3 sm:grid-cols-2 sm:grid-rows-2 grid-cols-1 grid-rows-1 gap-4">
                     <img class="h-auto max-w-full rounded-lg" src="../../assets/EnigmaEscape/EnigmaEscapeProcess17.jpg" alt="">
                     <img class="h-auto max-w-full rounded-lg" src="../../assets/EnigmaEscape/EnigmaEscapeProcess1.jpg" alt="">
                     <img class="h-auto max-w-full rounded-lg" src="../../assets/EnigmaEscape/EnigmaEscapeProcess5.jpg" alt="">

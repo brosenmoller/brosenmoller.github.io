@@ -36,3 +36,15 @@ html, body {
   text-decoration: none;
   background-size: 100% 2px;
 }
+
+ul.dashed {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+ul.dashed > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
