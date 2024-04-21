@@ -24,7 +24,7 @@
 
         <h2 class="font-bold text-3xl">Process</h2>
 
-        <h2 class="text-2xl">Begin</h2>
+        <h2 class="text-2xl">Mesh Generation</h2>
 
         <section class="flex justify-between xl:flex-row flex-col lg:gap-8 gap-4 mb-5">
            <div class="xl:w-1/3">
@@ -62,21 +62,55 @@
            </div>
         </section>
 
-        <h2 class="text-2xl">Godot & Unity Prefabs</h2>
+        <h2 class="text-2xl">Terrain Shader & Object placement</h2>
 
-        <section class="flex justify-between xl:flex-row flex-col lg:gap-8 gap-4">    
-            <div class="xl:w-1/2 xl:pr-10 xl:px-0 px-5 object-contain flex justify-start flex-col gap-4">
-                <img src="../../assets/VoxelSmith/VoxelSmith1.jpg" alt="">
-            </div>
-
+        <section class="flex justify-between xl:flex-row flex-col lg:gap-8 gap-4">
             <div class="lg:text-lg text-base xl:w-1/2 mb-8 xl:mb-0 xl:px-0 px-5">
                 <p class="">
-                    After rethinking the project, I ported the codebase to Godot to make use of the 3D capabilities and easy UI integration the engine provided. 
+                    To get textures on the terrain, I wrote a terrain shader with Shader Graph and HLSL to apply it to the generated mesh. The shader uses the dot product between the terrain normal and the up vector to calculate the steepness, and together with the terrain height it interpolates and blends between several different textures. For this purpose, I wanted to have a function that would smooth out to both sides. You can see the function I ended up with in the image. 
                 </p>
 
                 <p class="mt-5">
-                    Starting the export to Unity Prefabs was challenging due to Unity's closed code and lack of official documentation on ".prefab" files. After researching serialization IDs from several isolated forums and blogposts, I successfully exported a functional prefab. This image illustrates the process, where orange voxels are translated into instances of TestSphere.prefab.
+                    After all the generation, an object placer script spreads objects like trees, rock and bushes over the map. This also keeps into account the height and steepness of the terrain. You can see the end result and the top of this page.
                 </p>
+            </div>
+
+            <div class="xl:w-1/2 xl:pr-10 xl:px-0 px-5 object-contain flex justify-start flex-col gap-4">
+                <img src="../../assets/TerrainGeneration/ECTTP6.jpg" alt="">
+                <img src="../../assets/TerrainGeneration/ECTTP5.jpg" alt="">
+            </div>
+        </section>
+
+        <h2 class="text-2xl">2D Caves with Celluar Automate </h2>
+
+        <section class="flex justify-between flex-col lg:gap-8 gap-4">
+            <div class="lg:text-lg text-base mb-8 xl:mb-0 xl:px-0 px-5">
+                <p class="">
+                    Using cellular automata, I created a script that can generate an infinite number of cave layouts. It runs on the GPU using an HLSL compute shader for performance. It consists of several different steps and iterations laid out in these images.
+                </p>
+            </div>
+
+            <div class="xl:pr-10 xl:px-0 px-5 grid lg:grid-rows-1 lg:grid-cols-5 grid-rows-3 grid-cols-2 gap-4">
+                <div class="flex flex-col gap-2">
+                    <img src="../../assets/TerrainGeneration/ECTTPNoiseMap1.jpg" alt="">
+                    <span>1. Noisemap</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img src="../../assets/TerrainGeneration/ECTTPNoiseMap2.jpg" alt="">
+                    <span>2. Cellular Automata</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img src="../../assets/TerrainGeneration/ECTTPNoiseMap3.jpg" alt="">
+                    <span>3. Map Cleanup</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img src="../../assets/TerrainGeneration/ECTTPNoiseMap4.jpg" alt="">
+                    <span>4. Remove Small Rooms</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img src="../../assets/TerrainGeneration/ECTTPNoiseMap5.jpg" alt="">
+                    <span>5. Make Connections</span>
+                </div>
             </div>
         </section>
 
