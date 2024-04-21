@@ -60,7 +60,7 @@
         <h2 class="text-2xl">Learning Sources</h2>
         
         <section class="ml-10">
-            <ul class="list-item list-outside text-white">
+            <ul class="text-white dashed">
                 <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
                 <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
                 <li><a href="https://www.youtube.com/watch?v=eJEpeUH1EMg" class="fancy-link text-violet-400">MeshGeneration by Brackeys</a></li>
@@ -81,3 +81,19 @@
 import ProjectPage from '../../components/ProjectPage.vue';
 
 </script>
+
+<style scoped>
+
+ul.dashed {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+ul.dashed > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+</style>
