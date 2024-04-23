@@ -24,6 +24,7 @@ import ProjectPanel from "./Subcomponents/ProjectPanel.vue";
 const projects = ref([
     {
         title: "Voxelsmith",
+        id: "voxel-smith",
         img: "VoxelSmithCover.jpg",
         link: "/voxel-smith",
         linkText: "To Page",
@@ -32,6 +33,7 @@ const projects = ref([
     },
     {
         title: "Enigma Escape",
+        id: "enigma-escape",
         img: "EnigmaEscape.jpg",
         link: "/enigma-escape",
         linkText: "To Page",
@@ -40,6 +42,7 @@ const projects = ref([
     },
     {
         title: "Terrain Generation",
+        id: "terrain-generation",
         img: "ECTTPCover.jpg",
         link: "/terrain-generation",
         linkText: "To Page",
@@ -48,18 +51,20 @@ const projects = ref([
     },
     {
         title: "Paint over War",
+        id: "paint-over-war",
         img: "PaintOverWarCover.jpg",
         link: "/paint-over-war",
         linkText: "To Page",
         linkType: 1,
-        description: "Paint over a war is a story driven 3D puzzle game in which you play as a time traveling soldier dicovering an old military base. It was created after our school trip to Berlin and was based of the 'Teufelsberg'. I lead a team of 6 members to create this project. It was created in Unity using C#."
+        description: "Paint over a war is a story driven 3D puzzle game in which you play as a time travelling soldier discovering an old military base. It was created after our school trip to Berlin and was based off the 'Teufelsberg'. I lead a team of 6 members to create this project. It was created in Unity using C#."
     },
     {
         title: "Under Our Wing",
+        id: "under-our-wing",
         img: "UnderOurWingCover.jpg",
-        link: "/under-our-wing",
-        linkText: "To Page",
-        linkType: 1,
+        link: "https://nebaj.itch.io/under-our-wing",
+        linkText: "To Itch.io",
+        linkType: 2,
         description: "This project was commissioned by the municipality of Utrecht. In this game you play as a pigeon who is going around gathering stories from local refugees. This project was created in a cross school team of 8 members using Unity and C#"
     },
     // {

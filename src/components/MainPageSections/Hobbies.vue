@@ -24,6 +24,7 @@ import ProjectPanel from "./Subcomponents/ProjectPanel.vue";
 const projects = ref([
     {
         title: "Nevas Buildings",
+        id: "nevas-buildings",
         img: "NevasBuildingsCover.jpg",
         link: "https://www.youtube.com/@NevasBuildings",
         linkText: "To Youtube",
@@ -32,6 +33,7 @@ const projects = ref([
     },
     {
         title: "Music",
+        id: "hobby-music",
         img: "PianoCover.jpg",
         link: "#",
         linkText: "To Page",

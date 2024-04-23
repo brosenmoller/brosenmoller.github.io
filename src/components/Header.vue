@@ -65,7 +65,7 @@
                 },
                 {
                     name: 'Under Our Wing',
-                    link: "/under-our-wing"
+                    link: "/#under-our-wing"
                 },
             ]
         },
@@ -76,11 +76,11 @@
             children: [
                 {
                     name: 'Nevas Buildings',
-                    link: "/voxel-smith"
+                    link: "/#nevas-buildings"
                 },
                 {
                     name: 'Music',
-                    link: "/voxel-smith"
+                    link: "/#hobby-music"
                 },
             ]
         },

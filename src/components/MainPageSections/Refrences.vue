@@ -26,7 +26,7 @@
 
             <div class="lg:w-1/2">
                 <h1 class="font-bold text-2xl">David Scheidt</h1>
-                <span class="font-thin text-lg">Senior Software Developer</span>
+                <span class="font-thin text-lg">Senior Software Developer at Humotion GmbH</span>
 
                 <p class="">
                     Mr. Ben Rosenmöller, born on 08 March 2003, has completed a one-month internship for career

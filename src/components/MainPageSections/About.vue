@@ -9,7 +9,7 @@
 
     <div class="lg:w-4/5 pl-5 lg:mt-0 mt-4">
         <p class="">
-            I'm a 21-year-old student a <strong>HKU in Utrecht</strong>, where I study <strong>Game Development</strong>. I have always loved being creative, learning new things, working in teams and doing technical work. Game development has allowed me to combine these things. Now I'm dedicated to turn that passion into a career.
+            I'm a 21-year-old student at <strong>HKU in Utrecht</strong>, where I study <strong>Game Development</strong>. I have always loved being creative, learning new things, working in teams and doing technical work. Game development has allowed me to combine these things. Now I'm dedicated to turn that passion into a career.
         </p>
 
         <p class="mt-5">

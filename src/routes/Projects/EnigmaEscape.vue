@@ -114,7 +114,7 @@
 
 <script setup>
 import ProjectPage from '../../components/ProjectPage.vue';
-import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
-import 'vue-lite-youtube-embed/style.css'
+import LiteYouTubeEmbed from 'vue-lite-youtube-embed';
+import 'vue-lite-youtube-embed/style.css';
 
 </script>
