@@ -3,7 +3,7 @@
 
     <div class="lg:w-1/5 pr-5">
         <h1 class="flex lg:justify-end justify-start font-extrabold text-2xl uppercase text-violet-400">
-                About
+                Background
         </h1>
     </div>
 

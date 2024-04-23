@@ -2,7 +2,7 @@
     <ProjectPage 
         :title="'Terrain Generation'"
         :description="''"
-        :subtitle="'Solo project'"
+        :subtitle="'Solo project - 1 month part time'"
     >
 
     <div class="flex justify-start flex-col gap-8 w-full xl:px-20 md:px-10 p-2">

@@ -1,11 +1,11 @@
 <template>
     <main class="flex flex-1 flex-col font-normal text-wrap p-4">
         <Intro />
+        <Projects />
+        <Skills />
         <About />
         <Timeline />
         <Refrences />
-        <Skills />
-        <Projects />
         <Hobbies />
     </main>
 </template>

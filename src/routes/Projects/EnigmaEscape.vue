@@ -2,7 +2,7 @@
     <ProjectPage 
         :title="'Enigma Escape'"
         :description="''"
-        :subtitle="'Team of 5'"
+        :subtitle="'Team of 5 - 1 month full time'"
     >
         <div class="flex justify-start flex-col gap-8 w-full xl:px-20 md:px-5 p-2 lg:text-lg text-base">
             <section class="xl:flex xl:justify-between lg:gap-8 gap-4">

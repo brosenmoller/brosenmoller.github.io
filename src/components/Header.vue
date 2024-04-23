@@ -24,7 +24,11 @@
             link: '/#intro' 
         },
         {
-            name: 'About', 
+            name: 'Skills', 
+            link: '/#skills' 
+        },
+        {
+            name: 'Background', 
             link: '/#about' 
         },
         {
@@ -32,12 +36,8 @@
             link: '/#timeline' 
         },
         {
-            name: 'Refrences', 
+            name: 'References', 
             link: '/#refrences' 
-        },
-        {
-            name: 'Skills', 
-            link: '/#skills' 
         },
     ]);
 

@@ -2,7 +2,7 @@
     <ProjectPage 
         :title="'Voxel Smith'"
         :description="''"
-        :subtitle="'Solo Project'"
+        :subtitle="'Solo Project - 2 months part time'"
     >
 
     <div class="flex justify-start flex-col gap-8 w-full xl:px-20 md:px-10 p-2">
