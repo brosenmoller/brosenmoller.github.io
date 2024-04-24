@@ -3,16 +3,10 @@
         :title="'Voxel Smith'"
         :description="''"
         :subtitle="'Solo Project - 2 months part time'"
+        :link="'https://github.com/brosenmoller/VoxelSmith'"
     >
 
     <div class="flex justify-start flex-col gap-8 w-full xl:px-20 md:px-10 p-2">
-
-        <section class="flex justify-center text-2xl ">
-            <a class="flex text-violet-400 fancy-link" href="https://github.com/brosenmoller/VoxelSmith" target="_blank">
-                <FontAwesomeIcon :icon="faGithub" />
-                <span class="px-4 -mt-1">Voxel Smith GitHub Page</span>
-            </a>
-        </section>
         
         <section class="xl:flex xl:justify-between lg:gap-8 gap-4">
             

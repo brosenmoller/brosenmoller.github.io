@@ -52,12 +52,12 @@
                     link: "/voxel-smith"
                 },
                 {
-                    name: 'Enigma Escape',
-                    link: "/enigma-escape"
-                },
-                {
                     name: 'Terrain Generation',
                     link: "/terrain-generation"
+                },
+                {
+                    name: 'Enigma Escape',
+                    link: "/enigma-escape"
                 },
                 {
                     name: 'Paint Over War',

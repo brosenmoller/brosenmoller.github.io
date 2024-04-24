@@ -3,10 +3,11 @@
         :title="'Terrain Generation'"
         :description="''"
         :subtitle="'Solo project - 1 month part time'"
+        :link="'https://github.com/brosenmoller/ECTTP_MeshGeneration/'"
     >
 
     <div class="flex justify-start flex-col gap-8 w-full xl:px-20 md:px-10 p-2">
-        
+
         <section class="xl:flex xl:justify-between lg:gap-8 gap-4">
             
             <div class="text-base xl:w-2/4 mb-8 xl:mb-0 xl:px-0 px-5">
@@ -154,5 +155,6 @@
 
 <script setup>
 import ProjectPage from '../../components/ProjectPage.vue';
+
 
 </script>
