@@ -23,6 +23,7 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { onBeforeMount } from 'vue';
 
 const props = defineProps({
   title: String,
@@ -31,5 +32,12 @@ const props = defineProps({
   link: String,
 });
 
+onBeforeMount(() => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "instant",
+  });
+});
 
 </script>
