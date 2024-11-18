@@ -9,7 +9,7 @@
             
                 <div class=" xl:w-1/2 mb-8 xl:mb-0 xl:px-0 px-5">
                     <p class="">
-                        Enigma Escape is a game I developed with a team of 5 for Project Hybrid of the second year Games and Interaction at HKU. In this, we had to bring the digital and physical worlds together. 
+                        Enigma Escape is a game I developed with a team of 5 for Project Hybrid of the second year Games and Interaction at HKU. In this, we had to bring the digital and physical worlds together. The team consisted of me, Nina Buurman, Erik van der Meer, Dominique van Fliert en Cas Wellink.  
                     </p>
                     <p class="mt-5">
                         We did this by developing a game in which you play a digital 2D platformer controlled by a physical puzzle. The physical puzzle consists of a grid and different shaped blocks. These blocks can be placed in the grid like a jigsaw puzzle, from then on they act as buttons to control the game. Each block is associated with one particular action. The puzzle consists of recognizing which actions are needed in a level and then placing those blocks together on the grid. This project was created using C++ with Arduino and C# with Unity.
@@ -29,16 +29,10 @@
 
             <h2 class="font-bold text-3xl">Process</h2>
 
-            <!-- <div class="lg:text-lg text-base mb-8 xl:mb-0 xl:px-0 px-5">
-                <p class="">
-                    Together with one of my team meetings I worked on the technical part of this project, I mostly on code and electronics and she on creating the structure of the device. The most important challenge I had to overcome was developing a system that could detect a specific block on any place on the board and then detect a click from that block. We considered several different options, such as, shape recognition, translucent coloured blocks & colour sensor, resistors (each block has a different resistance), barcodes, RFID tags, radio transceivers or recognition by number of pins. After some initial testing I went for the solution using different resistors, as it would be cheap, easy to implement and small.  
-                </p>
-            </div> -->
-
             <section class="flex justify-between xl:flex-row flex-col lg:gap-8 gap-4 xl:mb-5">
                 <div class="lg:text-lg text-base xl:w-2/4 mb-8 xl:mb-0 xl:px-0 px-5">
                     <p class="">
-                        Together with one of my team meetings I worked on the technical part of this project, I mostly on code and electronics and she on creating the structure of the device. 
+                        Together with Nina Buurman, I worked on the technical part of this project, I mostly on code and electronics and she on creating the structure of the device. 
                     </p>
                     <p class="mt-5">
                         The most important challenge I had to overcome was developing a system that could detect a specific block on any place on the board and then detect a click from that block. We considered several different options, such as, shape recognition, translucent coloured blocks & colour sensor, resistors (each block has a different resistance), barcodes, RFID tags, radio transceivers or recognition by number of pins. After some initial testing I went for the solution using different resistors, as it would be cheap, easy to implement and small.  

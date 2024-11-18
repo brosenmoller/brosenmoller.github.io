@@ -9,7 +9,7 @@
                 
                 <div class=" xl:w-1/2 mb-8 xl:mb-0 xl:px-0 px-5">
                     <p class="">
-                        Paint over a war is a story driven 3D puzzle game in which you play as a time travelling soldier discovering an old military base. It was created after our school trip to Berlin and was based off the 'Teufelsberg'. I lead a team of 6 members to create this project. It was created in Unity using C#.
+                        Paint over a war is a story driven 3D puzzle game in which you play as a time travelling soldier discovering an old military base. It was created after our school trip to Berlin and was based off the 'Teufelsberg'. I lead a team of 6 members to create this project consisting of me, Cas Wellink, Ralf Zeilstra, Kirsten Westerhuis, Taran van Stel en Dominique Zonneveld. It was created in Unity using C#.
                     </p>
                 </div>
 
@@ -25,7 +25,7 @@
 
             <div class="lg:text-lg text-base mb-8 xl:mb-0 xl:px-0 px-5">
                 <p class="">
-                    For this project, I worked together with one other developer on the codebase. Because it was a puzzle game, it was important to develop tools for the designers that would allow them to quickly create and iterate on the designs. We created an interaction and sequence system that the designers could use to create for example buttons, triggers, sequences, items and doors. These can then be connected to several events.
+                    For this project, I worked together with Ralf Zeilstra on the codebase. Because it was a puzzle game, it was important to develop tools for the designers that would allow them to quickly create and iterate on the designs. We created an interaction and sequence system that the designers could use to create for example buttons, triggers, sequences, items and doors. These can then be connected to several events.
                 </p>
                 <p class="mt-5">
                     It was very important to work iteratively, so I made sure to have a new build of the project every week that we could use to test with our target audience. Furthermore, it made it very easy to look back at our progress and work as a motivation to keep pushing forward.

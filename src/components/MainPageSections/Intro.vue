@@ -3,7 +3,7 @@
         <div class="lg:text-5xl md:text-4xl text-2xl">
             <div class="lg:mb-20 mb-10">Hi,</div>
             <div>
-                I'm <strong>Ben Rosenmöller</strong>, a passionate Gamplay and Tools Developer from The Netherlands, who loves to create, design and learn new things.
+                I'm <strong>Ben Rosenmöller</strong>, a passionate Gameplay and Tools Developer from The Netherlands, who loves to create, design and learn new things.
             </div>
             <div class="mt-5 lg:text-xl text-lg">
                 Contact me at 
