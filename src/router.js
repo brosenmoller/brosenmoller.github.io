@@ -6,6 +6,7 @@ import EnigmaEscape from './routes/Projects/EnigmaEscape.vue';
 import TerrainGeneration from './routes/Projects/TerrainGeneration.vue';
 import PaintOverWar from './routes/Projects/PaintOverWar.vue';
 import UnderOurWing from './routes/Projects/UnderOurWing.vue';
+import MasterclassUnityProjectSetup from './routes/MasterclassUnityProjectSetup.vue';
 
 const routes = [
   { path: '/', component: Main },
@@ -14,6 +15,7 @@ const routes = [
   { path: '/terrain-generation', component: TerrainGeneration },
   { path: '/paint-over-war', component: PaintOverWar },
   { path: '/under-our-wing', component: UnderOurWing },
+  { path: '/masterclass-unity-project-setup', component: MasterclassUnityProjectSetup },
 ]
 
 const router = createRouter({
