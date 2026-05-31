@@ -52,6 +52,10 @@
                     link: "/liturnian"
                 },
                 {
+                    name: 'Forensick!',
+                    link: "/forensick"
+                },
+                {
                     name: 'Voxel Smith',
                     link: "/voxel-smith"
                 },

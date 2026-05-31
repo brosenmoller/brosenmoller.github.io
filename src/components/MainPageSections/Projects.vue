@@ -32,6 +32,15 @@ const projects = ref([
         description: "Liturnian is a 3D Metroidvania set in a world inhabited by living lights, featuring fluid movement, strange creatures and puzzles. As co-founder and lead developer I built core systems like a seamless dynamic room loading system, the save system and all UI implementation, a shader-driven map and enemy AI. Made in <strong>Unity</strong> with <strong>C#</strong> and released on <strong>Steam</strong>."
     },
     {
+        title: "Forensick!",
+        id: "forensick",
+        img: "Forensic!/Forensic_MainPhoto.jpg",
+        link: "/forensick",
+        linkText: "To Page",
+        linkType: 1,
+        description: "Forensick! is a chaotic, casual single-player \"party\" game in which you play as Maurice, a new, neurotic forensic investigator who must uncover the killers' identities by examining corpses. As the <strong>sole developer</strong> I built all the features and systems, with a focus on a flexible codebase and dialing in the game feel. Made in <strong>Unity</strong> with <strong>C#</strong>."
+    },
+    {
         title: "Voxelsmith",
         id: "voxel-smith",
         img: "VoxelSmith/VoxelSmith8.jpg",
