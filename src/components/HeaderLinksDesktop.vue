@@ -4,34 +4,34 @@
             <p>{{tab.name}}</p>
         </a>
 
+        <div v-for="(tab, index) in tabsWithChildren" class="relative">
 
-        <div v-for="(tab, index) in tabsWithChildren">
-
-            <button @mouseenter="ShowMenu(index)" class="duration-200 hover:text-violet-400 flex justify-between">
+            <button @mouseenter="ShowMenu(index)" class="duration-200 hover:text-violet-400 flex items-center gap-1.5">
                 <p>{{tab.name}}</p>
-                <FontAwesomeIcon :icon="faCaretUp" class="my-auto ml-2 transition-transform ease-in-out duration-500" :class="tab.active ? 'rotate-180' : ''"/>
+                <FontAwesomeIcon :icon="faCaretUp" class="text-xs transition-transform ease-in-out duration-300" :class="tab.active ? 'rotate-180' : ''"/>
             </button>
 
-            <div 
+            <div
                 :id="tab.name"
                 :class="!tab.active ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'"
-                class="transition ease-in-out duration-500 absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-slate-700 shadow-lg ring-1 
-                    ring-black ring-opacity-5 focus:outline-none"
+                class="transition ease-in-out duration-300 absolute left-1/2 -translate-x-1/2 z-10 mt-3 w-52 origin-top
+                       rounded-xl bg-slate-800 border border-slate-600/50 shadow-2xl shadow-black/50"
                 role="menu"
             >
-                
-                <div class="py-1" role="none">
+                <div class="absolute -top-[7px] left-1/2 -translate-x-1/2 w-3.5 h-3.5 bg-slate-800 border-l border-t border-slate-600/50 rotate-45"></div>
 
-                    <a :href="tab.link" class="text-white block px-4 py-2 text-sm hover:bg-slate-600 focus:bg-slate-500 font-bold" >
+                <div class="py-2 relative" role="none">
+
+                    <a :href="tab.link" class="text-violet-400 font-semibold flex items-center px-4 py-2.5 text-sm hover:bg-slate-700/60 rounded-lg mx-1.5 transition-colors duration-150">
                         All {{ tab.name }}
                     </a>
 
-                    <div class="border-t-2 border-slate-400"></div>
+                    <div class="border-t border-slate-600/40 my-1 mx-3"></div>
 
-                    <a 
+                    <a
                         v-for="child in tab.children"
                         :href="child.link"
-                        class="text-white block px-4 py-2 text-sm hover:bg-slate-600 focus:bg-slate-500" 
+                        class="text-slate-300 block px-4 py-2 text-sm hover:text-white hover:bg-slate-700/60 rounded-lg mx-1.5 transition-colors duration-150"
                     >
                         {{ child.name }}
                     </a>
@@ -40,7 +40,7 @@
 
             </div>
         </div>
-        
+
     </div>
 </template>
 
@@ -73,5 +73,5 @@
             element.active = false;
         }
     }
-    
+
 </script>

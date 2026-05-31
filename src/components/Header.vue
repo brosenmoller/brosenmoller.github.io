@@ -3,8 +3,9 @@
      border border-solid py-6 bg-slate-900 border-transparent"
      @mouseleave="HideAllMenus()">
         
-        <a href="/" class="font-medium">
-            <b class="font-bold">Ben</b> Rosenmöller
+        <a href="/" class="font-medium flex items-center gap-2.5 group duration-200">
+            <FontAwesomeIcon :icon="faHouse" class="text-violet-400 text-sm group-hover:text-violet-300 duration-200" />
+            <span class="group-hover:text-violet-400 duration-200"><b class="font-bold">Ben</b> Rosenmöller</span>
         </a>
 
         <HeaderLinksDesktop :tabs="tabs" :tabsWithChildren="tabsWithChildren" />
@@ -15,6 +16,8 @@
 
 <script setup>
     import { ref } from 'vue';
+    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+    import { faHouse } from '@fortawesome/free-solid-svg-icons';
     import HeaderLinksDesktop from './HeaderLinksDesktop.vue';
     import HeaderLinksMobile from './HeaderLinksMobile.vue';
 

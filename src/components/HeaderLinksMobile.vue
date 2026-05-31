@@ -35,17 +35,17 @@
                         role="none"
                     >
 
-                        <a :href="tab.link" @click="SetActive(false)" class="text-white block pb-2 text-sm hover:bg-slate-600 focus:bg-slate-500 font-bold" >
+                        <a :href="tab.link" @click="SetActive(false)" class="text-violet-400 block pb-2 text-sm font-semibold hover:text-violet-300 transition-colors duration-150">
                             All {{ tab.name }}
                         </a>
 
-                        <div class="border-t-2 border-slate-400"></div>
+                        <div class="border-t border-slate-600/50 mb-1"></div>
 
-                        <a 
+                        <a
                             v-for="child in tab.children"
                             @click="SetActive(false)"
                             :href="child.link"
-                            class="text-white block px-4 py-2 text-sm hover:bg-slate-600 focus:bg-slate-500" 
+                            class="text-slate-300 block px-2 py-1.5 text-sm hover:text-violet-400 transition-colors duration-150"
                         >
                             {{ child.name }}
                         </a>
