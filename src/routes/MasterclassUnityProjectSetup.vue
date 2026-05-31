@@ -56,13 +56,13 @@
             <h2 class="section-heading">Folder Structure</h2>
             <p>For folder structure there are two main ways to go about it:</p>
 
-            <ImagePlaceholder
+            <!-- <ImagePlaceholder
                 type="image"
                 ratio="16 / 9"
-                dimensions="Recommended ~1600 × 900px"
+                dimensions="~1600 × 900px"
                 label="Side-by-side folder tree diagram showing an Object-Oriented layout vs. a Type-Oriented layout for the same project."
                 caption="Object-Oriented vs. Type-Oriented folder layouts compared side by side."
-            />
+            /> -->
 
             <div class="grid md:grid-cols-2 gap-5">
                 <div class="info-card">
@@ -148,13 +148,13 @@
                 or is influenced by specific parts.
             </p>
 
-            <ImagePlaceholder
+            <!-- <ImagePlaceholder
                 type="image"
                 ratio="16 / 7"
-                dimensions="Recommended ~1600 × 700px"
+                dimensions="~1600 × 700px"
                 label="A before/after compile time comparison, 'one big assembly: recompile everything' vs. 'multiple assemblies: recompile one'."
                 caption="How splitting code into assemblies shrinks recompile scope."
-            />
+            /> -->
         </section>
 
         <!-- ============================ CREATING AN ASSEMBLY DEFINITION ============================ -->
@@ -177,13 +177,16 @@
                 <li>Assign a name to the asset. By default the assembly file uses the name you assign to the asset, but you can change the name in the Inspector window.</li>
             </ol>
 
-            <ImagePlaceholder
-                type="image"
-                ratio="16 / 10"
-                dimensions="Recommended ~1400 × 875px"
-                label="Screenshot of the Assembly Definition asset's Inspector window, highlighting the Name, Root Namespace and platform fields."
-                caption="The Assembly Definition Inspector, where you set the name, namespace and target platforms."
-            />
+            <figure class="w-full">
+                <img
+                    class="w-full rounded-lg border border-slate-700"
+                    src="../assets/Masterclass/AssemblyInspector.jpg"
+                    alt="Screenshot of the Assembly Definition asset's Inspector window, highlighting the Name, Root Namespace and platform fields."
+                />
+                <figcaption class="mt-2 text-center text-sm text-slate-400 italic">
+                    The Assembly Definition Inspector, where you set the name, namespace and target platforms.
+                </figcaption>
+            </figure>
 
             <p>
                 Unity takes all of the scripts in a folder that contains an Assembly Definition asset and compiles them
@@ -224,13 +227,16 @@
                 <strong>ProjectLantern</strong>.
             </p>
 
-            <ImagePlaceholder
-                type="image"
-                ratio="3 / 4"
-                dimensions="Recommended ~900 × 1200px (tall)"
-                label="The full Assets folder tree shown on screen, expanded into the folder for each section described below."
-                caption="The complete ProjectLantern Assets folder tree."
-            />
+            <figure class="w-full">
+                <img
+                    class="w-full rounded-lg border border-slate-700"
+                    src="../assets/Masterclass/FolderBrowserView.jpg"
+                    alt="The full Assets folder tree shown on screen, expanded into the folder for each section described below."
+                />
+                <figcaption class="mt-2 text-center text-sm text-slate-400 italic">
+                    The complete ProjectLantern Assets folder tree.
+                </figcaption>
+            </figure>
 
             <p>
                 We start at the root of the project, where it is nice to keep your own code and any plugins or tools you
@@ -285,13 +291,16 @@
                 workings and specific behaviour don't need to.
             </p>
 
-            <ImagePlaceholder
-                type="image"
-                ratio="16 / 9"
-                dimensions="Recommended ~1600 × 900px"
-                label="A diagram showing the two player assemblies, what lives in each, and which direction the reference arrows point."
-                caption="Splitting the player into a lean base assembly and a heavy subsystems assembly."
-            />
+            <figure class="w-full">
+                <img
+                    class="w-full rounded-lg border border-slate-700"
+                    src="../assets/Masterclass/PlayerAssembly.jpg"
+                    alt="A diagram showing the two player assemblies, what lives in each, and which direction the reference arrows point."
+                />
+                <figcaption class="mt-2 text-center text-sm text-slate-400 italic">
+                    Splitting the player into a lean base assembly and a heavy subsystems assembly.
+                </figcaption>
+            </figure>
 
             <p>
                 In this case you could have a general <code>ProjectLantern.Player</code> in your player folder with few to no
@@ -327,26 +336,29 @@
                 it becomes.
             </p>
 
-            <ImagePlaceholder
-                type="image"
-                ratio="16 / 10"
-                dimensions="Recommended ~1400 × 875px"
-                label="Screenshot of Unity's Package Manager window with the 'Add package from git URL' dialog open."
-                caption="Adding a reusable utility package straight from a git URL."
-            />
+            <figure class="w-full">
+                <img
+                    class="w-full rounded-lg border border-slate-700"
+                    src="../assets/Masterclass/package_manager.jpg"
+                    alt="Screenshot of Unity's Package Manager window with the 'Add package from git URL' dialog open."
+                />
+                <figcaption class="mt-2 text-center text-sm text-slate-400 italic">
+                    Adding a reusable utility package straight from a git URL.
+                </figcaption>
+            </figure>
         </section>
 
         <!-- ============================ PROJECT TEMPLATE SETUP ============================ -->
         <section class="flex flex-col gap-5">
             <h2 class="section-heading">Project Template Setup</h2>
 
-            <ImagePlaceholder
+            <!-- <ImagePlaceholder
                 type="gif"
                 ratio="16 / 9"
-                dimensions="Recommended ~1280 × 720px"
+                dimensions="~1280 × 720px"
                 label="A before/after showing a blank default Unity project vs. the template project opening with everything already in place."
                 caption="A blank slate vs. opening from your opinionated template."
-            />
+            /> -->
 
             <p>
                 Once you have done the initial project setup described in this tutorial a few times, it makes sense to save it as
@@ -377,13 +389,13 @@
                 of the game. Naturally, this boot scene is at index 0 in the scene list.
             </p>
 
-            <ImagePlaceholder
+            <!-- <ImagePlaceholder
                 type="image"
                 ratio="16 / 9"
-                dimensions="Recommended ~1600 × 900px"
+                dimensions="~1600 × 900px"
                 label="Diagram showing the boot scene at the base with persistent managers, and game scenes loading additively on top."
                 caption="The boot scene stays loaded while gameplay scenes swap in and out additively."
-            />
+            /> -->
 
             <p>
                 These managers are often implemented as singletons or registered into a service locator, and because they live in
@@ -507,7 +519,6 @@
 
 <script setup>
 import ProjectPage from '../components/ProjectPage.vue';
-import ImagePlaceholder from '../components/ImagePlaceholder.vue';
 import GifPlayer from '../components/GifPlayer.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFileLines, faDownload } from '@fortawesome/free-solid-svg-icons'
