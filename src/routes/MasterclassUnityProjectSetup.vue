@@ -444,16 +444,36 @@
                 <li>Whether <code>var</code> is preferred over explicit types (I personally hate <code>var</code> and love explicit types for their readability, but you are allowed an incorrect opinion).</li>
             </ul>
 
-            <ImagePlaceholder
-                type="image"
-                ratio="16 / 9"
-                dimensions="Recommended ~1400 × 790px"
-                label="Code snippet of a sample .editorconfig file, or an IDE showing a style warning being raised from one of its rules."
-                caption="A sample .editorconfig and the style warnings it raises in the IDE."
-            />
+            <figure class="w-full">
+                <img
+                    class="w-full rounded-lg border border-slate-700"
+                    src="../assets/Masterclass/editorconfig_codesnippet.png"
+                    alt="A snippet of a sample .editorconfig file showing C# formatting and style rules."
+                />
+                <figcaption class="mt-2 text-center text-sm text-slate-400 italic">
+                    A snippet from my <code>.editorconfig</code>, defining brace style and inline control-flow rules.
+                </figcaption>
+            </figure>
+
+            <a
+                :href="editorConfigUrl"
+                download=".editorconfig"
+                class="group flex items-center gap-4 rounded-lg border border-slate-700 bg-slate-800/40 p-4
+                       transition-colors hover:border-violet-400/70 hover:bg-slate-800/70 no-underline"
+            >
+                <FontAwesomeIcon :icon="faFileLines" class="text-3xl text-violet-400 shrink-0" />
+                <div class="flex flex-col min-w-0">
+                    <span class="font-semibold text-white">.editorconfig</span>
+                    <span class="text-sm text-slate-400">My full ruleset, ready to drop into your project root.</span>
+                </div>
+                <span class="ml-auto flex items-center gap-2 text-violet-300 shrink-0 group-hover:text-violet-200">
+                    <FontAwesomeIcon :icon="faDownload" />
+                    <span class="font-medium hidden sm:inline">Download</span>
+                </span>
+            </a>
 
             <p>
-                I will leave my <code>.editorconfig</code> file in the description for reference, but be sure to come up with your own
+                I have left my full <code>.editorconfig</code> file above for reference, but be sure to come up with your own
                 set of rules based on your preferences.
             </p>
             <p>
@@ -483,6 +503,10 @@
 <script setup>
 import ProjectPage from '../components/ProjectPage.vue';
 import ImagePlaceholder from '../components/ImagePlaceholder.vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faFileLines, faDownload } from '@fortawesome/free-solid-svg-icons'
+
+const editorConfigUrl = new URL('../assets/Masterclass/.editorconfig', import.meta.url).href;
 </script>
 
 <style scoped>
