@@ -48,6 +48,10 @@
             link: '/#projects',
             children: [
                 {
+                    name: 'Liturnian',
+                    link: "/liturnian"
+                },
+                {
                     name: 'Voxel Smith',
                     link: "/voxel-smith"
                 },

@@ -400,10 +400,12 @@
             </p>
 
             <figure class="w-full">
-                <img
-                    class="w-full rounded-lg border border-slate-700"
-                    src="../assets/Masterclass/RoomSystemGraduation_16_9.gif"
+                <GifPlayer
+                    :poster="roomSystemPoster"
+                    :gif="roomSystemGif"
                     alt="A level streaming in and out around the player while the UI and lighting scenes stay loaded."
+                    rounding="rounded-lg"
+                    class="aspect-[16/9] w-full border border-slate-700"
                 />
                 <figcaption class="mt-2 text-center text-sm text-slate-400 italic">
                     Additive scene streaming in action.
@@ -506,8 +508,12 @@
 <script setup>
 import ProjectPage from '../components/ProjectPage.vue';
 import ImagePlaceholder from '../components/ImagePlaceholder.vue';
+import GifPlayer from '../components/GifPlayer.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFileLines, faDownload } from '@fortawesome/free-solid-svg-icons'
+
+import roomSystemGif from '../assets/Masterclass/RoomSystemGraduation_16_9.gif';
+import roomSystemPoster from '../assets/Masterclass/RoomSystemGraduation_16_9_poster.jpg';
 
 // Served as a zip because browsers strip the leading dot from direct downloads;
 // inside the archive the file keeps its exact ".editorconfig" name.

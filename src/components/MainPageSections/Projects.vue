@@ -23,9 +23,18 @@ import ProjectPanel from "./Subcomponents/ProjectPanel.vue";
 // linkType (0 = None, 1 = Internal, 2 = External)
 const projects = ref([
     {
+        title: "Liturnian",
+        id: "liturnian",
+        img: "Liturnian/Liturnian_poster_compressed.jpg",
+        link: "/liturnian",
+        linkText: "To Page",
+        linkType: 1,
+        description: "Liturnian is a 3D Metroidvania set in a world inhabited by living lights, featuring fluid movement, strange creatures and puzzles. As co-founder and lead developer I built core systems like a seamless dynamic room loading system, the save system and all UI implementation, a shader-driven map and enemy AI. Made in <strong>Unity</strong> with <strong>C#</strong> and released on <strong>Steam</strong>."
+    },
+    {
         title: "Voxelsmith",
         id: "voxel-smith",
-        img: "VoxelSmithCover.jpg",
+        img: "VoxelSmith/VoxelSmith8.jpg",
         link: "/voxel-smith",
         linkText: "To Page",
         linkType: 1,
