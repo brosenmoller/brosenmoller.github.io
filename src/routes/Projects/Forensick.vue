@@ -1,7 +1,7 @@
 <template>
     <ProjectPage
         :title="'Forensick!'"
-        :subtitle="'Solo Project · Developer & Game Feel Designer'"
+        :subtitle="'Team of 3 - 6 months'"
         :description="'Forensick! is a chaotic, casual single-player &quot;party&quot; game in which you play as Maurice, a new, neurotic forensic investigator who must uncover the identity of each killer by examining corpses.'"
     >
         <div class="flex justify-start flex-col gap-12 w-full xl:px-20 md:px-5 p-2 lg:text-lg text-base">

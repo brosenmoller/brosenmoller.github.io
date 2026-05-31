@@ -10,7 +10,7 @@
         <!-- ============================ INTRODUCTION ============================ -->
         <section class="flex flex-col gap-4">
             <p>
-                In this tutorial I will explain how to set up a Unity project in a fast and scalable way.
+                In this masterclass I will explain how to set up a Unity project in a fast and scalable way.
                 Over the course of my projects I have made my fair share of large mistakes in this area, and
                 this is a way for me to share my insight.
             </p>

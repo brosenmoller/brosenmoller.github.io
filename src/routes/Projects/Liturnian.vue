@@ -1,7 +1,7 @@
 <template>
     <ProjectPage
         :title="'Liturnian'"
-        :subtitle="'Team of 8 · Lead & Systems Developer'"
+        :subtitle="'Team of 8 · 6 months'"
         :description="'Discover a strange world inhabited by living lights. Liturnian is a 3D Metroidvania with fluid movement, fights against strange creatures and exciting puzzles.'"
     >
         <div class="flex justify-start flex-col gap-12 w-full xl:px-20 md:px-5 p-2 lg:text-lg text-base">

@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen">
         <h1 class="font-extrabold sm:text-5xl text-2xl flex justify-center">{{ title }}</h1>
-        <span class="font-thin text-lg flex justify-center">{{ subtitle }}</span>
+        <span class="font-thin text-lg flex justify-center text-center px-4">{{ subtitle }}</span>
 
         <section v-if="link != null && link.length > 0" class="flex justify-center text-2xl py-2">
             <a class="flex text-violet-400 fancy-link" :href="link" target="_blank">

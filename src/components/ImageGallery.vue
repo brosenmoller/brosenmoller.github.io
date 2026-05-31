@@ -12,25 +12,23 @@
 
     <Transition name="lightbox-fade">
         <div v-if="lightboxIndex !== null" class="lightbox-overlay" @click.self="closeLightbox">
-            <button v-if="screenshots.length > 1"
-                    class="lightbox-nav lightbox-nav-prev" aria-label="Previous image"
-                    @click="prev">
-                <FontAwesomeIcon :icon="faChevronLeft" />
-            </button>
-
             <div class="lightbox-content" :style="lightboxContentStyle">
                 <button class="lightbox-close" aria-label="Close" @click="closeLightbox">
                     <FontAwesomeIcon :icon="faXmark" />
                 </button>
+                <button v-if="screenshots.length > 1"
+                        class="lightbox-nav lightbox-nav-prev" aria-label="Previous image"
+                        @click="prev">
+                    <FontAwesomeIcon :icon="faChevronLeft" />
+                </button>
                 <img :src="screenshots[lightboxIndex]" :alt="alt + ' enlarged'"
                      class="lightbox-img" @load="onLightboxImgLoad">
+                <button v-if="screenshots.length > 1"
+                        class="lightbox-nav lightbox-nav-next" aria-label="Next image"
+                        @click="next">
+                    <FontAwesomeIcon :icon="faChevronRight" />
+                </button>
             </div>
-
-            <button v-if="screenshots.length > 1"
-                    class="lightbox-nav lightbox-nav-next" aria-label="Next image"
-                    @click="next">
-                <FontAwesomeIcon :icon="faChevronRight" />
-            </button>
         </div>
     </Transition>
 </template>
@@ -50,7 +48,7 @@ const lightboxAspect = ref(16 / 9);
 
 const lightboxContentStyle = computed(() => ({
     aspectRatio: String(lightboxAspect.value),
-    width: `min(80vw, ${lightboxAspect.value * 80}vh)`,
+    '--aspect': String(lightboxAspect.value),
 }));
 
 function openLightbox(index, event) {
@@ -127,23 +125,23 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 2rem;
+    padding: 1rem;
     background: rgba(2, 6, 23, 0.85);
     backdrop-filter: blur(4px);
 }
 
 .lightbox-content {
     position: relative;
-    max-width: 80vw;
-    max-height: 80vh;
+    width: min(90vw, calc(90vh * var(--aspect)));
+    max-width: 90vw;
+    max-height: 90vh;
 }
 
 .lightbox-img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 0.5rem;
     box-shadow: 0 0 60px rgba(167, 139, 250, 0.35), 0 0 0 1px rgba(167, 139, 250, 0.4);
 }
@@ -153,7 +151,7 @@ onUnmounted(() => {
     top: 0;
     right: 0;
     transform: translate(50%, -50%);
-    z-index: 1;
+    z-index: 2;
     width: 2.75rem;
     height: 2.75rem;
     display: flex;
@@ -173,7 +171,10 @@ onUnmounted(() => {
 }
 
 .lightbox-nav {
-    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
     width: 2.75rem;
     height: 2.75rem;
     display: flex;
@@ -182,14 +183,22 @@ onUnmounted(() => {
     font-size: 1.1rem;
     color: white;
     border-radius: 9999px;
-    background: rgba(15, 23, 42, 0.9);
+    background: rgba(15, 23, 42, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.25);
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .lightbox-nav:hover {
     background: rgba(167, 139, 250, 0.4);
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-nav-prev {
+    left: 0.5rem;
+}
+
+.lightbox-nav-next {
+    right: 0.5rem;
 }
 
 .lightbox-fade-enter-active,
