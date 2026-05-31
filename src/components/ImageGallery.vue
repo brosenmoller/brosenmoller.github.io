@@ -1,0 +1,153 @@
+<template>
+    <section class="xl:px-0 px-5">
+        <h2 class="font-bold text-3xl mb-6">Gallery</h2>
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+            <img v-for="shot in screenshots" :key="shot"
+                 :src="shot" :alt="alt"
+                 class="gallery-img"
+                 @click="openLightbox(shot, $event)">
+            <slot />
+        </div>
+    </section>
+
+    <Transition name="lightbox-fade">
+        <div v-if="lightboxImage" class="lightbox-overlay" @click.self="closeLightbox">
+            <div class="lightbox-content" :style="lightboxContentStyle">
+                <button class="lightbox-close" aria-label="Close" @click="closeLightbox">
+                    <FontAwesomeIcon :icon="faXmark" />
+                </button>
+                <img :src="lightboxImage" :alt="alt + ' enlarged'" class="lightbox-img">
+            </div>
+        </div>
+    </Transition>
+</template>
+
+<script setup>
+import { ref, computed, watch, onUnmounted } from 'vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
+defineProps({
+    screenshots: { type: Array, required: true },
+    alt: { type: String, default: 'Screenshot' },
+});
+
+const lightboxImage = ref(null);
+const lightboxAspect = ref(16 / 9);
+
+const lightboxContentStyle = computed(() => ({
+    aspectRatio: String(lightboxAspect.value),
+    width: `min(80vw, ${lightboxAspect.value * 80}vh)`,
+}));
+
+function openLightbox(src, event) {
+    const target = event?.currentTarget;
+    if (target && target.naturalWidth && target.naturalHeight) {
+        lightboxAspect.value = target.naturalWidth / target.naturalHeight;
+    }
+    lightboxImage.value = src;
+}
+
+function closeLightbox() {
+    lightboxImage.value = null;
+}
+
+function onKeydown(e) {
+    if (e.key === 'Escape') closeLightbox();
+}
+
+watch(lightboxImage, (value) => {
+    if (value) {
+        document.body.style.overflow = 'hidden';
+        window.addEventListener('keydown', onKeydown);
+    } else {
+        document.body.style.overflow = '';
+        window.removeEventListener('keydown', onKeydown);
+    }
+});
+
+onUnmounted(() => {
+    document.body.style.overflow = '';
+    window.removeEventListener('keydown', onKeydown);
+});
+</script>
+
+<style scoped>
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(167, 139, 250, 0.3);
+    border-color: rgba(167, 139, 250, 0.5);
+}
+
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.lightbox-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 60px rgba(167, 139, 250, 0.35), 0 0 0 1px rgba(167, 139, 250, 0.4);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 9999px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+    background: rgba(167, 139, 250, 0.4);
+    transform: translate(50%, -50%) rotate(90deg);
+}
+
+.lightbox-fade-enter-active,
+.lightbox-fade-leave-active {
+    transition: opacity 0.2s ease;
+}
+
+.lightbox-fade-enter-from,
+.lightbox-fade-leave-to {
+    opacity: 0;
+}
+</style>
