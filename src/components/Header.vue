@@ -56,6 +56,10 @@
                     link: "/forensick"
                 },
                 {
+                    name: 'Professor Bubble',
+                    link: "/professor-bubble"
+                },
+                {
                     name: 'Voxel Smith',
                     link: "/voxel-smith"
                 },
@@ -67,14 +71,14 @@
                     name: 'Enigma Escape',
                     link: "/enigma-escape"
                 },
-                {
-                    name: 'Paint Over War',
-                    link: "/paint-over-war"
-                },
-                {
-                    name: 'Under Our Wing',
-                    link: "/#under-our-wing"
-                },
+                // {
+                //     name: 'Paint Over War',
+                //     link: "/paint-over-war"
+                // },
+                // {
+                //     name: 'Under Our Wing',
+                //     link: "/#under-our-wing"
+                // },
             ]
         },
         {

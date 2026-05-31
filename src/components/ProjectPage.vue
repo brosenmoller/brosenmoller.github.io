@@ -1,22 +1,21 @@
 <template>
     <div class="min-h-screen">
-        <h1 class="font-extrabold sm:text-5xl text-2xl flex justify-center">{{ title }}</h1>
-        <span class="font-thin text-lg flex justify-center text-center px-4">{{ subtitle }}</span>
+        <header class="flex flex-col items-center text-center pt-10 pb-10 px-6">
+            <h1 class="font-extrabold sm:text-5xl text-3xl">{{ title }}</h1>
+            <p class="mt-2 text-slate-400 font-light text-base">{{ subtitle }}</p>
 
-        <section v-if="link != null && link.length > 0" class="flex justify-center text-2xl py-2">
-            <a class="flex text-violet-400 fancy-link" :href="link" target="_blank">
+            <a v-if="link" :href="link" target="_blank" class="github-btn mt-4">
                 <FontAwesomeIcon :icon="faGithub" />
-                <span class="mx-4 -mt-1">GitHub Page</span>
+                <span>GitHub</span>
             </a>
-        </section>
 
-        <div class="flex justify-center md:w-2/4 md:mx-auto mx-5 my-5">
-          <p class="md:text-xl text-lg" v-html="description"></p>
-        </div>
-
+            <p v-if="description"
+               class="mx-auto mt-5 max-w-2xl text-slate-300 md:text-lg text-base leading-relaxed"
+               v-html="description">
+            </p>
+        </header>
 
         <slot></slot>
-        
     </div>
 </template>
 
@@ -26,18 +25,34 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { onBeforeMount } from 'vue';
 
 const props = defineProps({
-  title: String,
-  description: String,
-  subtitle: String,
-  link: String,
+    title: String,
+    description: String,
+    subtitle: String,
+    link: String,
 });
 
 onBeforeMount(() => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "instant",
-  });
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
 });
-
 </script>
+
+<style scoped>
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1.2rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgb(167, 139, 250);
+    border: 1px solid rgba(167, 139, 250, 0.4);
+    background: rgba(167, 139, 250, 0.06);
+    transition: border-color 0.2s ease, background 0.2s ease;
+    text-decoration: none;
+}
+.github-btn:hover {
+    border-color: rgba(167, 139, 250, 0.7);
+    background: rgba(167, 139, 250, 0.12);
+}
+</style>

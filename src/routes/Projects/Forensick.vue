@@ -2,17 +2,9 @@
     <ProjectPage
         :title="'Forensick!'"
         :subtitle="'Team of 3 - 6 months'"
-        :description="'Forensick! is a chaotic, casual single-player &quot;party&quot; game in which you play as Maurice, a new, neurotic forensic investigator who must uncover the identity of each killer by examining corpses.'"
+        :description="'Forensick! is a chaotic, casual game in which you play as Maurice, a new, neurotic forensic investigator who must uncover the identity of each killer by examining corpses.'"
     >
         <div class="flex justify-start flex-col gap-12 w-full xl:px-20 md:px-5 p-2 lg:text-lg text-base">
-
-            <!-- Call to action links -->
-            <!-- <section class="flex flex-wrap justify-center gap-4 -mt-2 xl:px-0 px-5">
-                <a class="trailer-button group" href="https://youtu.be/VMo_abxVc3I" target="_blank">
-                    <FontAwesomeIcon :icon="faYoutube" class="text-2xl" />
-                    <span>Watch Trailer</span>
-                </a>
-            </section> -->
 
             <!-- Hero: trailer -->
             <section class="xl:px-0 px-5">
@@ -23,12 +15,6 @@
                     />
                 </div>
             </section>
-
-            <!-- Main photo -->
-            <!-- <section class="xl:px-0 px-5">
-                <img :src="mainPhoto" alt="Forensick!"
-                     class="rounded-xl w-full object-cover glow-frame-soft max-w-4xl mx-auto">
-            </section> -->
 
             <!-- My role -->
             <section class="xl:px-0 px-5">

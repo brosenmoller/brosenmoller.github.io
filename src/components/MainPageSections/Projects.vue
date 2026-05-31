@@ -38,7 +38,16 @@ const projects = ref([
         link: "/forensick",
         linkText: "To Page",
         linkType: 1,
-        description: "Forensick! is a chaotic, casual single-player \"party\" game in which you play as Maurice, a new, neurotic forensic investigator who must uncover the killers' identities by examining corpses. As the <strong>sole developer</strong> I built all the features and systems, with a focus on a flexible codebase and dialing in the game feel. Made in <strong>Unity</strong> with <strong>C#</strong>."
+        description: "Forensick! is a chaotic, casual game in which you play as Maurice, a new, neurotic forensic investigator who must uncover the killers' identities by examining corpses. As the developer I built all the features and systems, with a focus on a flexible codebase and dialing in the game feel. Made in <strong>Unity</strong> with <strong>C#</strong>."
+    },
+    {
+        title: "Professor Bubble",
+        id: "professor-bubble",
+        img: "ProfessorBubble/professor_bubble_cover.jpg",
+        link: "/professor-bubble",
+        linkText: "To Page",
+        linkType: 1,
+        description: "Professor Bubble's laboratory has been thrown into chaos! A 48-hour Global Game Jam 2025 entry at HKU Netherlands with the theme \"Bubbles\". The game got <strong>1st place</strong> in the jury vote and 2nd place in the public vote. Made in <strong>Unity</strong> with <strong>C#</strong>."
     },
     {
         title: "Voxelsmith",
@@ -67,24 +76,24 @@ const projects = ref([
         linkType: 1,
         description: "Enigma Escape is a 2D puzzle platformer where the puzzle comes from physically assembling your controller. This project was created using C++ with Arduino and C# with Unity."
     },
-    {
-        title: "Paint over War",
-        id: "paint-over-war",
-        img: "PaintOverWarCover.jpg",
-        link: "/paint-over-war",
-        linkText: "To Page",
-        linkType: 1,
-        description: "Paint over a war is a story driven 3D puzzle game in which you play as a time travelling soldier discovering an old military base. It was created after our school trip to Berlin and was based off the 'Teufelsberg'. I lead a team of 6 members to create this project. It was created in Unity using C#."
-    },
-    {
-        title: "Under Our Wing",
-        id: "under-our-wing",
-        img: "UnderOurWingCover.jpg",
-        link: "https://nebaj.itch.io/under-our-wing",
-        linkText: "To Itch.io",
-        linkType: 2,
-        description: "This project was commissioned by the municipality of Utrecht. In this game you play as a pigeon who is going around gathering stories from local refugees. This project was created in a cross school team of 8 members using Unity and C#"
-    },
+    // {
+    //     title: "Paint over War",
+    //     id: "paint-over-war",
+    //     img: "PaintOverWarCover.jpg",
+    //     link: "/paint-over-war",
+    //     linkText: "To Page",
+    //     linkType: 1,
+    //     description: "Paint over a war is a story driven 3D puzzle game in which you play as a time travelling soldier discovering an old military base. It was created after our school trip to Berlin and was based off the 'Teufelsberg'. I lead a team of 6 members to create this project. It was created in Unity using C#."
+    // },
+    // {
+    //     title: "Under Our Wing",
+    //     id: "under-our-wing",
+    //     img: "UnderOurWingCover.jpg",
+    //     link: "https://nebaj.itch.io/under-our-wing",
+    //     linkText: "To Itch.io",
+    //     linkType: 2,
+    //     description: "This project was commissioned by the municipality of Utrecht. In this game you play as a pigeon who is going around gathering stories from local refugees. This project was created in a cross school team of 8 members using Unity and C#"
+    // },
     // {
     //     title: "Rootscape",
     //     img: "RootscapeCover.jpg",

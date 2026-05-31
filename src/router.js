@@ -8,6 +8,7 @@ import PaintOverWar from './routes/Projects/PaintOverWar.vue';
 import UnderOurWing from './routes/Projects/UnderOurWing.vue';
 import Liturnian from './routes/Projects/Liturnian.vue';
 import Forensick from './routes/Projects/Forensick.vue';
+import ProfessorBubble from './routes/Projects/ProfessorBubble.vue';
 import MasterclassUnityProjectSetup from './routes/MasterclassUnityProjectSetup.vue';
 
 const routes = [
@@ -19,6 +20,7 @@ const routes = [
   { path: '/under-our-wing', component: UnderOurWing },
   { path: '/liturnian', component: Liturnian },
   { path: '/forensick', component: Forensick },
+  { path: '/professor-bubble', component: ProfessorBubble },
   { path: '/masterclass-unity-project-setup', component: MasterclassUnityProjectSetup },
 ]
 

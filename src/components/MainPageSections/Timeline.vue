@@ -3,20 +3,18 @@
 
         <div class="lg:w-1/5 pr-5">
             <h1 class="flex lg:justify-end justify-start font-extrabold text-2xl uppercase text-violet-400">
-                    Timeline
+                Timeline
             </h1>
         </div>
 
-        <div class="lg:w-4/5 pl-5 lg:mt-0 mt-4 flex flex-wrap lg:flex-nowrap lg:justify-start">
-            
-            <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+        <div class="lg:w-4/5 pl-5 lg:mt-0 mt-4">
+            <ol class="relative border-s border-slate-700">
                 <TimelineElement v-for="element in timelineElements"
                     :time="element.time"
                     :title="element.title"
                     :description="element.description"
                 />
             </ol>
-
         </div>
 
     </section>
@@ -58,6 +56,4 @@ const timelineElements = ref([
         description: "This was my secondary school, where I studied VWO (Dutch for Gymnasium). Here I followed courses specializing in nature and engineering."
     },
 ]);
-
-
 </script>
