@@ -7,8 +7,8 @@
             </div>
             <div class="mt-5 lg:text-xl text-lg">
                 Contact me at 
-                <a href="mailto:rosenmollerben@gmail.com" target="_blank" class="text-violet-400 fancy-link">
-                    rosenmollerben@gmail.com
+                <a href="mailto:ben@rosenmoller.com" target="_blank" class="text-violet-400 fancy-link">
+                    ben@rosenmoller.com
                 </a>
             </div>
         </div>

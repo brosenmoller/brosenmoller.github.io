@@ -399,13 +399,16 @@
                 you could even dynamically load parts of your world in and out based on player proximity.
             </p>
 
-            <ImagePlaceholder
-                type="video"
-                ratio="16 / 9"
-                dimensions="Recommended ~1280 × 720px"
-                label="Short clip demonstrating additive loading: a level streaming in/out around the player while the UI and lighting scenes stay loaded."
-                caption="Optional: additive scene streaming in action."
-            />
+            <figure class="w-full">
+                <img
+                    class="w-full rounded-lg border border-slate-700"
+                    src="../assets/Masterclass/RoomSystemGraduation_16_9.gif"
+                    alt="A level streaming in and out around the player while the UI and lighting scenes stay loaded."
+                />
+                <figcaption class="mt-2 text-center text-sm text-slate-400 italic">
+                    Additive scene streaming in action.
+                </figcaption>
+            </figure>
 
             <p>
                 This approach also pairs naturally with splitting your game into logical scene layers. For example, you might have a
