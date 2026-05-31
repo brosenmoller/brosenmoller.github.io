@@ -456,15 +456,15 @@
             </figure>
 
             <a
-                :href="editorConfigUrl"
-                download=".editorconfig"
+                :href="editorConfigZipUrl"
+                download="editorconfig.zip"
                 class="group flex items-center gap-4 rounded-lg border border-slate-700 bg-slate-800/40 p-4
                        transition-colors hover:border-violet-400/70 hover:bg-slate-800/70 no-underline"
             >
                 <FontAwesomeIcon :icon="faFileLines" class="text-3xl text-violet-400 shrink-0" />
                 <div class="flex flex-col min-w-0">
                     <span class="font-semibold text-white">.editorconfig</span>
-                    <span class="text-sm text-slate-400">My full ruleset, ready to drop into your project root.</span>
+                    <span class="text-sm text-slate-400">My full ruleset (zipped). Unzip and drop it into your project root.</span>
                 </div>
                 <span class="ml-auto flex items-center gap-2 text-violet-300 shrink-0 group-hover:text-violet-200">
                     <FontAwesomeIcon :icon="faDownload" />
@@ -506,7 +506,9 @@ import ImagePlaceholder from '../components/ImagePlaceholder.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFileLines, faDownload } from '@fortawesome/free-solid-svg-icons'
 
-const editorConfigUrl = new URL('../assets/Masterclass/.editorconfig', import.meta.url).href;
+// Served as a zip because browsers strip the leading dot from direct downloads;
+// inside the archive the file keeps its exact ".editorconfig" name.
+const editorConfigZipUrl = new URL('../assets/Masterclass/editorconfig.zip', import.meta.url).href;
 </script>
 
 <style scoped>
