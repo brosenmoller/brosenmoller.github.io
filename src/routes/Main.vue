@@ -7,6 +7,7 @@
         <Timeline />
         <Refrences />
         <Hobbies />
+        <Masterclasses />
     </main>
 </template>
 
@@ -18,4 +19,5 @@
     import Skills from "../components/MainPageSections/Skills.vue";
     import Projects from "../components/MainPageSections/Projects.vue";
     import Hobbies from "../components/MainPageSections/Hobbies.vue";
+    import Masterclasses from "../components/MainPageSections/Masterclasses.vue";
 </script>
