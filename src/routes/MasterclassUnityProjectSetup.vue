@@ -16,6 +16,57 @@
             </p>
         </section>
 
+        <!-- ============================ LESSON INFO ============================ -->
+        <section class="flex flex-col gap-5 border-y border-slate-700 py-8">
+
+            <div class="grid sm:grid-cols-2 gap-5">
+                <div class="info-card">
+                    <h3 class="info-card-title">Learning Objective</h3>
+                    <p class="text-slate-300">
+                        After this masterclass the reader can quickly set up a new Unity project with a scalable
+                        structure (folders, assemblies, namespaces and scenes) that is suitable for a game project
+                        of 6+ months.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <div class="info-card">
+                        <h3 class="info-card-title">Duration</h3>
+                        <p class="text-slate-300">± 10–20 minutes</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="info-card-title">Required Prior Knowledge</h3>
+                        <p class="text-slate-300">
+                            Intermediate to advanced Unity knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout">
+                <h3 class="callout-title">Existing Tutorials</h3>
+                <p>
+                    Many Unity tutorials focus on building features, but not on how to structure a project so that it
+                    stays maintainable for months or years. On top of that, the few tutorials that do cover structure
+                    are missing a number of details that are important to me, such as:
+                </p>
+                <ul class="dashed text-slate-200 ml-4 flex flex-col gap-2">
+                    <li>Scene setup (additive scene loading and bootstrapper scenes)</li>
+                    <li>Assembly definitions (and namespaces)</li>
+                </ul>
+            </div>
+
+            <div class="callout">
+                <h3 class="callout-title">Graduation Project</h3>
+                <p>
+                    My graduation project: <strong>Project Forensic</strong>, a fast-paced detective party game made in
+                    Unity. The relation to my graduation plan is that in this project I applied and refined this way of
+                    setting up a project, so that my team and I could make a strong start on our six-month-long project.
+                </p>
+            </div>
+
+        </section>
+
         <!-- ============================ WHEN TO SKIP ============================ -->
         <section class="flex flex-col gap-5">
             <h2 class="section-heading">When to skip this</h2>
@@ -510,6 +561,22 @@
                 project grows. Hopefully this gives you a solid starting point.
             </p>
             <p class="font-semibold text-white">Good luck on your future projects!</p>
+        </section>
+
+        <!-- ============================ SOURCES ============================ -->
+        <section class="flex flex-col gap-3">
+            <h2 class="section-heading">Sources</h2>
+            <p class="text-slate-400">
+                These are the sources I used to check and expand my piece, but the majority of the content was based
+                on my own experience
+            </p>
+            <ul class="flex flex-col gap-2 mt-1">
+                <li><a class="fancy-link text-violet-400 break-all" href="https://unity.com/how-to/organizing-your-project" target="_blank">unity.com — Organizing your project</a></li>
+                <li><a class="fancy-link text-violet-400 break-all" href="https://medium.com/@sonusprocks/setup-your-unity-game-advanced-1b26b2432315" target="_blank">medium.com — Setup your Unity game (advanced)</a></li>
+                <li><a class="fancy-link text-violet-400 break-all" href="https://www.youtube.com/watch?v=nVieP57TD20" target="_blank">youtube.com/watch?v=nVieP57TD20</a></li>
+                <li><a class="fancy-link text-violet-400 break-all" href="https://www.youtube.com/watch?v=eovjb5xn8y0" target="_blank">youtube.com/watch?v=eovjb5xn8y0</a></li>
+                <li><a class="fancy-link text-violet-400 break-all" href="https://www.youtube.com/watch?v=JFP-cCFID7o" target="_blank">youtube.com/watch?v=JFP-cCFID7o</a></li>
+            </ul>
         </section>
 
     </article>
