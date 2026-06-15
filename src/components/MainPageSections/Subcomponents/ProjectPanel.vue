@@ -60,8 +60,17 @@ function handlePanelClick() {
     }
 }
 
+// Eagerly resolve all asset URLs, including those in subdirectories. A plain
+// `new URL(`...${var}`, import.meta.url)` expands to a `*` glob that does not
+// match across `/`, so subdirectory images silently fail to load.
+const images = import.meta.glob('../../../assets/**/*.{jpg,jpeg,png,gif,webp}', {
+    eager: true,
+    import: 'default',
+    query: '?url',
+});
+
 function getImageUrl() {
-    return new URL(`../../../assets/${props.project.img}`, import.meta.url);
+    return images[`../../../assets/${props.project.img}`];
 }
 
 function getSecondaryIcon() {
